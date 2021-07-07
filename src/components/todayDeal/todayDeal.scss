@@ -1,0 +1,49 @@
+.productsContainer{
+    position: relative;
+    max-width: 100%;
+  
+  
+    min-height: 350px;
+    display: flex;
+    /* flex-flow: column; */
+    /* background-color: #ecf0f1; */
+    border-radius: 0.25rem;
+    margin: 1rem;
+    user-select: none;
+    transition: 0.25s;
+    flex-wrap: wrap;
+}
+.productCard {
+ 
+    margin-left: 25px;
+    box-shadow: 10px 5px 40px 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 22%;
+    height: 350px;
+    align-items: center;
+}
+.productCountry {
+    font-size: 13px;
+    font-family: cursive;
+    opacity: 0.5;
+}
+.productName {
+    font-size: 18px;
+    font-family: cursive;
+}
+.Price {
+    margin-top: 3px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+img{
+    width: 200px;
+    height:250px;
+}
+button.btn.btn-outline-primary {
+    /* justify-content: center; */
+    margin-left: 40%;
+    width: 400px;
+    border-radius: 20px;
+}
