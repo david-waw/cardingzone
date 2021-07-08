@@ -1,20 +1,49 @@
 
-import React, {useContext } from 'react'
+import React, {useContext,useState } from 'react'
 import {ProductContext } from "../Data/CategoryContents/todayDeals.js"
 import './todayDeal.scss'
-import NavBar from './NavBar'
+import SideNav from "../../components/todayDeal/NavBar"
+import ReactPaginate from "react-paginate"
+import { useHistory } from "react-router-dom";
+import CustomButton from '../custombutton/custombutton'
+
 
 const ShopPage = () => {
     const { product } = useContext(ProductContext)
     console.log(product)
- 
+    const [pageNumber,setPageNumber]=useState(0)
+const itemsPerPage=10
+    const pagesVisited = pageNumber * itemsPerPage
+   const pageCount=Math.ceil(product.length/itemsPerPage)
+    const pageChange = ({selected}) => {
+        setPageNumber(selected)
+    }
+    
+    const click = (...props) => {
+        let notifiedRoom = {
+            name: props.[1],
+           image: props.[2],
+            price: props.[0]
+        };
+       
+        var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
+        console.log(data)
+        handleClick()
+    }
+   
+        const history = useHistory();
+      
+        function handleClick() {
+          history.push("/product");
+        }
     return (
         
         <>
-      <NavBar/>
+            <SideNav />
+            <div className='wrap'>
             <div className='productsContainer'>
                 {product.length === 0 && <div>slow internet...no products to display</div>}
-                { product.slice(0, 19).map(category => (
+                { product.slice(pagesVisited, pagesVisited + itemsPerPage).map(category => (
               
                     
                     <div className='productCard' key={category.ProductsID}>
@@ -27,14 +56,29 @@ const ShopPage = () => {
                         <div className='productName'>
                             {category.ProductName}
                         </div>
-                        <div className='productName'>
+                        <div className='Price'>
                             {category.ProductPrice}
                         </div>
+                        <CustomButton inverted  onClick = {()=>click(category.ProductPrice,category.ProductName,category.ProductImg)}>DETAILS</CustomButton>
                     </div>
 
 
                 ))}
+              
             </div>
+            <ReactPaginate
+                    previousLabel={'previous'}
+                    nextLabel={'next'}
+                    pageCount={pageCount}
+                    onPageChange={pageChange}
+                    containerClassName={'paginate'}
+                    previousLinkClassName={'previous'}
+                    nextLinkClassName={'next'}
+                    disabledClassName={'disabled'}
+                    activeClassName={'active'}
+                />
+            </div>
+           
         </>
     )
 }

@@ -1,42 +1,60 @@
 import React,{ useContext ,useState} from 'react'
 import * as FaIcons from 'react-icons/fa';
+import styled from "styled-components"
 import { Link } from 'react-router-dom';
-import SidebarData from './SidebarData'
+import  MenuItems from './sidebarMenu.js'
 import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
 import { CategoryContext } from "../Data/CategoryContents/CategoryContents.js"
+import { auth } from '../Config/config';
+import Submenu from './submenu'
+
 import './Navbar.css'
 
-const NavBar = () => {
-    const { category } = useContext(CategoryContext)
-   
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+const NavIcon = styled(Link)`
+margin-left:2rem;
+font-size:2rem;
+height:50px;
+display:flex;
+justify-content:flex-start;
+align-items:center;
+`
+const SideBarNav = styled.div`
+width:250px;
+height:100vh;
+display:flex;
+justify-content:center;
+position:fixed;
+top:90px;
+left:${({ sidebar }) => (sidebar ? '0' : '-100%')};
+transition:350ms;
+z-index:10;
+background: black;
+`
+const SideBarWrap = styled.div`
+width:100%
+`
+const SideNav = () => {
+    const [sidebar, setSidebar] = useState(false)
+    const showSidebar=()=>setSidebar(! sidebar)
     return (
         <>
-            <div className='navbar'>
-                <Link to='#' className='menu-bars'>
-                <FaIcons.FaBars onClick={showSidebar} />
-            </Link>
-            </div>
-            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showSidebar}>
-                    <li className='navbar-toggle'>
-                        <Link to='#' className='menu-bars'>
-                        <AiIcons.AiOutlineClose />
-                        </Link>
-                        
-                    </li>
-                    {category.map((item) => {
-              return (
-                <li className={item.category}>
-                 
-                </li>
-              );
-            })}
-                    
-            </ul>
-            </nav>
-        </>
+          
+                <NavIcon to="#">
+                    <FaIcons.FaBars onClick={showSidebar}/>
+                </NavIcon>
+          
+            <SideBarNav sidebar={sidebar}>
+                <SideBarWrap>
+                <NavIcon to="#">
+                    <AiIcons.AiOutlineClose onClick={showSidebar}/>
+                    </NavIcon>
+                    {MenuItems.map((item,index)=>{
+return <Submenu item={item} key={index}/>
+                    })}
+                </SideBarWrap>
+            </SideBarNav>
+            </>
     )
 }
-export default NavBar
+export default SideNav

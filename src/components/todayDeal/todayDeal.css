@@ -1,0 +1,13 @@
+.productsContainer{
+    position: relative;
+    max-width: 100%;
+   min-height: 350px;
+    display: flex;
+    /* flex-flow: column; */
+    /* background-color: #ecf0f1; */
+    border-radius: 0.25rem;
+    margin: 1rem;
+    user-select: none;
+    transition: 0.25s;
+    flex-wrap: wrap;
+}
