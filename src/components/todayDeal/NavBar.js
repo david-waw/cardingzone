@@ -21,15 +21,16 @@ align-items:center;
 `
 const SideBarNav = styled.div`
 width:250px;
-height:100vh;
+height:86vh;
 display:flex;
 justify-content:center;
 position:fixed;
-top:90px;
+top:78px;
 left:${({ sidebar }) => (sidebar ? '0' : '-100%')};
 transition:350ms;
 z-index:10;
 background: black;
+overflow:scroll;
 `
 const SideBarWrap = styled.div`
 width:100%

@@ -12,7 +12,7 @@ const ShopPage = () => {
     const { product } = useContext(ProductContext)
     console.log(product)
     const [pageNumber,setPageNumber]=useState(0)
-const itemsPerPage=10
+const itemsPerPage=8
     const pagesVisited = pageNumber * itemsPerPage
    const pageCount=Math.ceil(product.length/itemsPerPage)
     const pageChange = ({selected}) => {
@@ -21,9 +21,10 @@ const itemsPerPage=10
     
     const click = (...props) => {
         let notifiedRoom = {
-            name: props.[1],
-           image: props.[2],
-            price: props.[0]
+            name: props.[2],
+           image: props.[3],
+            price: props.[0],
+            description:props.[1]
         };
        
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
@@ -39,6 +40,7 @@ const itemsPerPage=10
     return (
         
         <>
+            <div className="Shop">
             <SideNav />
             <div className='wrap'>
             <div className='productsContainer'>
@@ -59,7 +61,7 @@ const itemsPerPage=10
                         <div className='Price'>
                             {category.ProductPrice}
                         </div>
-                        <CustomButton inverted  onClick = {()=>click(category.ProductPrice,category.ProductName,category.ProductImg)}>DETAILS</CustomButton>
+                        <CustomButton inverted  onClick = {()=>click(category.ProductPrice,category.description,category.ProductName,category.ProductImg)}>DETAILS</CustomButton>
                     </div>
 
 
@@ -79,7 +81,10 @@ const itemsPerPage=10
                 />
             </div>
            
+            </div>
+           
         </>
     )
 }
 export default ShopPage
+

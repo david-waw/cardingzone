@@ -1,0 +1,34 @@
+.footer{
+    height: 400px;
+    margin-top: 150px;
+    background-color: beige;
+   
+}
+.footerOne {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.Footertwo {
+    display: flex;
+    justify-content: space-between;
+}
+.titleone {
+    font-size: 25px;
+    opacity: 0.7;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.footerContent {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    opacity: 0.8;
+}
+.fafooter{
+    margin-right: 8px;
+font-size: 40px;
+color: blue;
+}

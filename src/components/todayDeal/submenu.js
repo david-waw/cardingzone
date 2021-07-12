@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import  MenuItems from './MenuItems.js'
 import * as AiIcons from 'react-icons/ai';
 
+import "./sidemenu.scss"
 const Sidebarlink = styled(Link)`
 display:flex;
 color:white;
@@ -18,6 +19,7 @@ font-size:18px;
 &:hover{
     background:#79aaf1;
 cursor:pointer;
+
 }
 `
 const DropDownLink = styled(Link)`
@@ -41,9 +43,10 @@ color:grey;
 const Submenu = ({ item }) => {
     const [subnav, setSubnav] = useState(false)
     const showSubnav = () => setSubnav(!subnav)
+   
     return (
         <>
-            <Sidebarlink to={"#"} onClick={item.subNav && showSubnav}>
+            <Sidebarlink to={item.path} onClick={item.subNav && showSubnav}>
                 <div>
                 <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
@@ -58,7 +61,9 @@ const Submenu = ({ item }) => {
                     <DropDownLink to={item.path} key={index}>
                         <SidebarLabel>{ item.title}</SidebarLabel>
                     </DropDownLink>
+                  
                 )
+              
             })}
         </> 
    ) 

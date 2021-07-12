@@ -1,0 +1,46 @@
+.reviews {
+    margin-top: 20px;
+}
+.reviewContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.stars {
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+}
+.heading {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.body {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Font Awesome 5 Pro';
+    margin-top: 38px;
+}
+.reviewCard {
+    border-style: outset;
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.reviewCard img {
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+.reviewBurrons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /* margin: 10px; */
+    margin-top: 15px;
+}
+.reviewBurrons button.btn.btn-outline-primary {
+    font-size: 20px;
+    font-weight: 900;
+}

@@ -4,6 +4,7 @@ import { storage, db } from '../Config/config'
 export const AddProducts = () => {
 
     const [productName, setProductName] = useState('');
+    const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
     const [country, setCountry] = useState('');
     const [productPrice, setProductPrice] = useState(0);
@@ -39,8 +40,10 @@ export const AddProducts = () => {
                         category:category,
                         country:country,
                         ProductPrice: Number(productPrice),
-                        ProductImg: url
+                        ProductImg: url,
+                        description:description
                     }).then(() => {
+                        setDescription('');
                         setProductName('');
                         setCategory('');
                         setCountry('');
@@ -62,6 +65,10 @@ export const AddProducts = () => {
                 <label htmlFor="product-name">Product Name</label>
                 <input type="text" className='form-control' required
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
+                <br />
+                <label htmlFor="product-name">Description</label>
+                <input type="text" className='form-control' required
+                    onChange={(e) => setDescription(e.target.value)} value={description} />
                 <br />
                 <label htmlFor="Category">Category</label>
                 <input type="text" className='form-control' required

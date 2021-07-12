@@ -4,15 +4,17 @@ import './BootsrapCarousel.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useHistory } from "react-router-dom";
 
 export class BootsrapCarousel extends Component {
   static contextType = CategoryContext
+ 
  
     render() {
         const settings = {
             dots: true,
             infinite: true,
-            slidesToShow: 10,
+            slidesToShow: 8,
             slidesToScroll: 1,
             autoplay: true,
             speed: 2000,
@@ -20,14 +22,14 @@ export class BootsrapCarousel extends Component {
             cssEase: "linear"
       };
       const { category } = this.context
-    console.log(category)
+     
       return (
 
           <div id='productCard'>
           <Slider {...settings}>
           {category.map(category => (
-              
-                    
+            
+              <a href= {category.category}>
               <div className='product-card' key={category.CategoryID}>
                   <div className='product-img'>
                       <img className="img" src={category.ProductImg} alt="not found" />
@@ -38,6 +40,8 @@ export class BootsrapCarousel extends Component {
                
                 
               </div>
+            </a>
+          
 
 
           ))}

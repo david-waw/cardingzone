@@ -81,7 +81,7 @@ export const MenuItems = [
   },
   {
     title: 'Carded products',
-    path: '/cardedeproducts',
+    path: '/cardedproducts',
     cName: 'dropdown-link'
   },
   {
@@ -96,7 +96,7 @@ export const MenuItems = [
   },
   {
     title: 'Credit Debit Cards',
-    path: '/creditdebitcards',
+    path: '/credidebit Cards',
     cName: 'dropdown-link'
   },
   {

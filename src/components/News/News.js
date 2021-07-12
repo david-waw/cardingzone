@@ -12,7 +12,7 @@ export class News extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
             speed: 2000,

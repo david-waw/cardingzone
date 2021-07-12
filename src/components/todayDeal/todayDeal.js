@@ -14,11 +14,12 @@ const Deal = () => {
   
     const click = (...props) => {
         let notifiedRoom = {
-            name: props.[1],
-           image: props.[2],
-            price: props.[0]
+            name: props.[2],
+           image: props.[3],
+            price: props.[0],
+            description:props.[1]
         };
-       
+       console.log(props)
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
         console.log(data)
         handleClick()
@@ -53,13 +54,15 @@ const Deal = () => {
                         <div className='Price'>
                             {category.ProductPrice}
                         </div>
-                        <CustomButton inverted  onClick = {()=>click(category.ProductPrice,category.ProductName,category.ProductImg)}>DETAILS</CustomButton>
+                        <CustomButton inverted  onClick = {()=>click(category.ProductPrice,category.description,category.ProductName,category.ProductImg)}>DETAILS</CustomButton>
                     </div>
 
                 ))}
             </div>
+            <a href="/ShopPage">
             <Button variant="outline-primary"><i class="fa fa-search" aria-hidden="true"></i>View All Deals</Button>{' '}
-        </>
+           </a>
+          </>
     )
 }
 export default Deal

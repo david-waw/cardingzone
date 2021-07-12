@@ -22,3 +22,19 @@
   .product-card,.product-img{
     width: 100px !important;
   }
+  .slick-slide img{
+    opacity:0.5;
+    &:hover{
+      opacity:1;
+      cursor: pointer;
+    }
+  }
+.carbtn{
+  border:transparent;
+  background:transparent;
+}
+.product-name{
+  text-align: center;
+  font-size: 13px;
+  text-transform: capitalize;
+}
