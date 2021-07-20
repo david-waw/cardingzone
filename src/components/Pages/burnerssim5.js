@@ -11,7 +11,7 @@ const   BurnersSimMoroko= () => {
     const { product } = useContext(ProductContext)
     console.log(product)
     const [pageNumber,setPageNumber]=useState(0)
-const itemsPerPage=8
+const itemsPerPage=6
     const pagesVisited = pageNumber * itemsPerPage
    const pageCount=Math.ceil(product.length/itemsPerPage)
     const pageChange = ({selected}) => {

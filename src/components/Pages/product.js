@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import CustomButton from '../custombutton/custombutton';
 import { addItem } from "../../redux/cart/cart.actions";
 import { v4 as uuidv4 } from 'uuid';
+
 export  class Products extends Component {
 
 constructor() {
@@ -13,7 +14,6 @@ constructor() {
         product:[ JSON.parse(localStorage.getItem('notifiedRoom'))],
     }
   }
-  
  
     render() {
         

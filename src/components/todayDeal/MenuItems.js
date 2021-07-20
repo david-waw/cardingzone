@@ -111,7 +111,7 @@ export const MenuItems = [
   },
   {
     title: 'Emv Chip Software',
-    path: '/emvchipsoftware',
+    path: '/softwares',
     cName: 'dropdown-link'
   },
   {
@@ -126,7 +126,7 @@ export const MenuItems = [
   },
   {
     title: 'Mentorship and Coaching',
-    path: '/mentershipandcoaching ',
+    path: '/mentershipandcoaching',
     cName: 'dropdown-link'
   }
 ];
@@ -140,7 +140,7 @@ export const HelpItems = [
   },
   {
     title: 'FAQS',
-    path: '/faqs',
+    path: '/help',
     cName: 'dropdown-link'
   },
   {
@@ -155,7 +155,12 @@ export const HelpItems = [
   },
   {
     title: 'Vendor Terms',
-    path: '/vendorterms',
+    path: '/help',
+    cName: 'dropdown-link'
+  },
+  {
+    title: 'Submit Vendor Aplication',
+    path: '/contactus',
     cName: 'dropdown-link'
   }
   

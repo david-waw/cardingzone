@@ -1,4 +1,5 @@
 import React from 'react'
+import FooterLinks from '../footerlinks/footerlinks'
 import './footer.scss'
 
 const Footer = () => {
@@ -12,32 +13,67 @@ const Footer = () => {
                         <div className='titleone'>
                             ABOUT US
                         </div>
-                        <div className='footerContent'>
-
-                        </div>
+                        <a href= "/aboutus">
+                         <div className='footerContentab'> We are at cardingbird vendors from Hansa Market Place</div>
+                        </a>
+                        <a href= "/aboutus">
+                         <div className='footerContentab'> We sucesfully deliver over 1700+ oders with 98% positive review </div>
+                        </a>
+                        <a href= "/aboutus">
+                         <div className='footerContentab'> We have extensive knowledge and experience in dealing with delivering a wide range of services to our clients</div>
+                        </a>
+                        <a href= "/aboutus">
+                         <div className='footerContentab'> Read More...</div>
+                        </a>
                     </div>
                     <div className='rulesFooter'>
                     <div className='titleone'>
                             RULES AND OUR TERMS
                         </div>
+                        <a href= "/termsofservice">
                         <div className='footerContent'>
                         TERMS OF SERVICES
-                        </div>
-                        <div className='footerContent'> PRIVACY TERMS</div>
+                            </div>
+                        </a>
+                        <a href= "/privacypolicy">
+                         <div className='footerContent'> PRIVACY TERMS</div>
+                        </a>
+                        <a href="/cookiepolicy">
                         <div className='footerContent'>COOCKIES ON OUR SITE</div>
+                        </a>
+                        <a href="/aboutus">
                         <div className='footerContent'>ABOUT US</div>
+                        </a>
+                        <a href="/aboutus">
+                            
+                        </a>
+                        <a href= '/vendorterms'>
                         <div className='footerContent'> VENDOR TERMS</div>
+                        </a>
+                       
+                      
                         <div className='footerContent'>  SUBMIT VENDOR APPLICATION </div>
                         </div>
                     <div className='helpFooter'>
                     <div className='titleone'>
                            HELP AND SUPPORT
                         </div>
+                        <a href='/help'>
                         <div className='footerContent'> HELP</div>
+                        </a>
+                        <a href='/help'>
                         <div className='footerContent'>FAQS</div>
+                        </a>
+                        <a href='/blog'>
                         <div className='footerContent'>BLOG</div>
+                        </a>
+                        <a href='/contactus'>
                         <div className='footerContent'>CONTACT US</div>
-                        <div className='footerContent'> CUSTOMER-REVIEWS</div>
+                        </a>
+                        <a href='/authenticreviews'>
+                        <div className='footerContent'> CUSTOMER-REVIEWS</div> 
+                        </a>
+                      
                         <div className='footerContent'> OUR TEAM + VENDORS</div>
                     </div>
                     <div className='officialFooter'>
@@ -47,15 +83,15 @@ const Footer = () => {
                         <div className='footerContent'><i className="fa fa-user-circle fafooter" aria-hidden="true"></i>@CODE142857</div>
                         <div className='footerContent'><i className="fa fa-telegram fafooter" aria-hidden="true"></i>@CODE142857</div>
                         <div className='footerContent'>NOTE:we also have an invite only<br/> telegram group chat reserved for<br/> our "paid customers"</div>
-                        <div className='footerContent'>CONTACT US</div>
+                    
                 </div>
                 </div>
                 <div className='Footertwo'>
                 <div className='Footertime'>
-                    time
+                   2021 CardingBird.com
                     </div>
                     <div className='Footertlogo'>
-                    logo
+                    <i class="fa fa-btc" aria-hidden="true"></i>
                     </div>
                 </div>
             

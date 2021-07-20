@@ -10,10 +10,15 @@ import { auth } from '../Config/config';
 import CartIcon from '../cart-icon/cart-icon';
 import Cost from '../cart-icon/cost'
 import CartDropdown from "../cart/cart"
+import { createStructuredSelector } from 'reselect';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
+import { signOutStart } from '../../redux/user/user.actions';
 
 
 
-function Navbar({currentUser,hidden}) {
+
+function Navbar({currentUser, hidden, signOutStart }) {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false);
@@ -134,15 +139,10 @@ function Navbar({currentUser,hidden}) {
                         
                     </li>
                   
-                    <li className='nav-item'>
-                        <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
-                       
-                            BLOG
-                        </Link>
-                    </li>
+                  
                     <li className='nav-item'>
                         {currentUser ? (
-                            <div className='nav-links' onClick={() => auth.signOut()}>
+                            <div className='nav-links' onClick={signOutStart}>
                                 SIGN OUT
                             </div>
                         ) : (
@@ -168,11 +168,16 @@ function Navbar({currentUser,hidden}) {
 
 }
 
-const mapStateToProps = ({user:{currentUser},cart:{hidden}})  => ({
-  currentUser,
-  hidden
-   
-  });
-  
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectCartHidden
+});
 
-  export default connect(mapStateToProps)(Navbar);
+const mapDispatchToProps = dispatch => ({
+  signOutStart: () => dispatch(signOutStart())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Navbar);

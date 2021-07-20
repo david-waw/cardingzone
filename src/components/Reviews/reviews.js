@@ -47,10 +47,10 @@ const Review = () => {
                 ))}
                 </div>
                 <div className='reviewBurrons'>
-                <a href="/ShopPage">
+                <a href="/AddReviews">
             <Button variant="outline-primary">   <i class="fa fa-star" aria-hidden="true"></i>Leave a review</Button>{' '}
                 </a>
-                <a href="/ShopPage">
+                <a href="/Reviews">
             <Button variant="outline-primary"><i class="fa fa-play" aria-hidden="true"></i>View All Reviews</Button>{' '}
            </a>
                 </div>

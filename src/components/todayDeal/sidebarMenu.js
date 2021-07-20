@@ -766,6 +766,47 @@ export const MenuItems = [
     
     ]
   },
+  {
+    title: 'Mentorship',
+    path: '#',
+    cName: 'dropdown-link',
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: 'Mentorship',
+        path: '/mentershipandcoaching',
+        cName: 'dropdown-link',
+      },
+      {
+        title: 'Advanced carding',
+        path: '/advancedcarding',
+        cName: 'dropdown-link',
+      },
+      {
+        title: 'Advanced Cash App Masterclass',
+        path: '/advancedcashapp',
+        cName: 'dropdown-link',
+      },
+      {
+        title: 'Advanced Dumps Masterclass',
+        path: '/advanceddumps',
+        cName: 'dropdown-link',
+      },
+      {
+        title: 'Advanced Paypal Masterclass',
+        path: '/advancedpaypal',
+        cName: 'dropdown-link',
+      },
+      {
+        title: 'Advanced Venmo Masterclass',
+        path: '/advanced venmo',
+        cName: 'dropdown-link',
+      },
+    
+    
+    ]
+  },
     {
       title: 'Venmo',
       path: '/venmo ',

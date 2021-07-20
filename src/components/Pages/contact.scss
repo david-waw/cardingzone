@@ -1,0 +1,62 @@
+.contactHead{
+    height:50vh;
+}
+h2.contactTitle {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    /* margin-top: 20px; */
+    /* top: 20px; */
+}
+p.contactSub {
+    text-align: center;
+    color: white;
+}
+
+.card-group {
+    margin-top: 20vh;
+    height: 40vh;
+}
+.contactIcon {
+    text-align: center;
+    font-size: 70px;
+}
+.card-title {
+    margin-bottom: .5rem;
+    text-align: center;
+    font-size: 30px;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background: aliceblue;
+}
+.contactContainer{
+    height:90vh;
+}
+h2.kaheading {
+    text-align: center;
+    font-weight: 700;
+}
+h2.kasubheading {
+    font-size: 17px;
+    font-weight: 100;
+    text-decoration: underline;
+    text-align: center;
+}
+.someContents {
+    opacity: 0.8;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 150px;
+}
+.companyDetails {
+    margin-top: 40px;
+    text-align: center;
+}
+h2.compantTitle {
+    text-decoration: underline;
+    font-weight: 900;
+}

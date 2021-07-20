@@ -12,7 +12,7 @@ export class News extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             autoplay: true,
             speed: 2000,
@@ -28,16 +28,18 @@ export class News extends Component {
           {news.map(category => (
               
                     
-              <div className='productcard' key={category.CategoryID}>
-              <div className='category'>
-                      {category.category}
+            <div className='productcard' key={category.CategoryID}>
+            <div className='productimgnews'>
+                      <img className="ImgNews" src={category.ProductImg} alt="not found" />
                   </div>
-                  <div className='productname'>
+              <div className='productnamenews'>
                       {category.ProductName}
                   </div>
-                  <div className='productimg'>
-                      <img className="Img" src={category.ProductImg} alt="not found" />
+              <div className='categorynews'>
+                      {category.category}
                   </div>
+                 
+             
                  
                  
                  
