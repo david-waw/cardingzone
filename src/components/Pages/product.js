@@ -36,7 +36,7 @@ constructor() {
                                <div className="row">
                                <h2 id="productName1">{name}</h2>
                <span id="predPrice">${price}</span>
-              
+               <span id="prodId">{ id}</span>
              </div>
              <h3 id="terms">
                <p id="terms1">TERMS</p>
