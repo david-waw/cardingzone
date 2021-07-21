@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { storage, db } from '../Config/config'
-
+import "./AddProducts.scss"
 export const AddProducts = () => {
 
     const [productName, setProductName] = useState('');
     const [description, setDescription] = useState('');
+    const [terms, setTerms] = useState('');
     const [category, setCategory] = useState('');
     const [country, setCountry] = useState('');
     const [productPrice, setProductPrice] = useState(0);
@@ -41,13 +42,15 @@ export const AddProducts = () => {
                         country:country,
                         ProductPrice: Number(productPrice),
                         ProductImg: url,
-                        description:description
+                        description: description,
+                        terms:terms
                     }).then(() => {
                         setDescription('');
                         setProductName('');
                         setCategory('');
                         setCountry('');
                         setProductPrice(0)
+                        setTerms(0)
                         setProductImg('');
                         setError('');
                         document.getElementById('file').value = '';
@@ -66,10 +69,7 @@ export const AddProducts = () => {
                 <input type="text" className='form-control' required
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
                 <br />
-                <label htmlFor="product-name">Description</label>
-                <input type="text" className='form-control' required
-                    onChange={(e) => setDescription(e.target.value)} value={description} />
-                <br />
+                
                 <label htmlFor="Category">Category</label>
                 <input type="text" className='form-control' required
                     onChange={(e) => setCategory(e.target.value)} value={category} />
@@ -86,6 +86,15 @@ export const AddProducts = () => {
                 <input type="file" className='form-control' id="file" required
                     onChange={productImgHandler} />
                 <br />
+                <label htmlFor="product-name">Terms</label>
+                <input type="text" className='form-control bg' required
+                    onChange={(e) => setTerms(e.target.value)} value={terms} />
+                <br />
+                <label htmlFor="product-name">Description</label>
+                <input type="text" className='form-control bg' required
+                    onChange={(e) => setDescription(e.target.value)} value={description} />
+                <br />
+              
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}
