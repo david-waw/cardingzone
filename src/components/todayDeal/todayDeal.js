@@ -36,7 +36,7 @@ const Deal = () => {
         
         <>
       
-            <div className='productsContainer'>
+            <div className='productsContainers'>
                 {product.length === 0 && <div>slow internet...no products to display</div>}
                 { product.slice(0, 19).map(category => (
               

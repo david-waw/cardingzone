@@ -41,16 +41,25 @@ const Wrap = styled.div`
 `;
 
 const Dropdown = styled.div`
-  background: #1c1c1c;
-  color: #00ffb9;
-  width: 100%;
-  height: 205px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #00ffb9;
-  border-top: 1px solid #00ffb9;
+ width: 100%;
+    height: 230px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  
+    -ms-flex-align: center;
+    /* align-items: center; */
+    border-bottom: 1px solid #00ffb9;
+    border-top: 1px solid #00ffb9;
+    /* text-align: left; */
   p {
     font-size: 12px;
   }

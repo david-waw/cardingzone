@@ -190,7 +190,7 @@ import Western from "./components/Pages/western"
 import Venmo from "./components/Pages/venmo"
 import SSNC from "./components/Pages/SSNC"
 import Checkout from "./components/checkoutpage/checkoutpage"
-
+import AddOder from "./components/AddOder/payment"
 import Help from './components/Pages/help'
 import Faqs from "./components/Pages/faq"
 import Contact from "./components/Pages/contact"
@@ -198,12 +198,14 @@ import TermsOfService from "./components/Pages/TermsOfService"
 import CoockiePolicy from "./components/Pages/coockiepolicy"
 import SignInAndSignUpPage from "./components/Pages/sign-in-aign-up.js"
 import Privacy from "./components/Pages/privacy"
+import OderConfirm from "./components/oderConfirmed/oderconfirm"
 import Footer from "./components/footer/footer"
 import AddNews from './components/AddNews/AddNews'
 import { Switch, Route, Redirect } from "react-router-dom";
 import { CategoryContextProvider } from './components/Data/CategoryContents/CategoryContents.js'
 import { ReviewContextProvider } from './components/Data/CategoryContents/reviews'
 import { ProductContextProvider } from './components/Data//CategoryContents/todayDeals.js'
+
 import { NewsContextProvider } from "./components/Data/CategoryContents/news.jsx"
 import Navbar from './components/todayDeal/Navbar2'
 import { auth, createUserProfileDocument } from './components/Config/config';
@@ -248,6 +250,7 @@ const App = ({ checkUserSession, currentUser }) => {
                   <Route exact path='/bankdrops/usa/n26' component={DropsUSAN26} />
                   <Route exact path='/bankdrops/usa/america express' component={DropsUSAExpress} />
                   <Route exact path='/bankdrops/usa/suntrust' component={DropsUSASun} />
+                  <Route exact path='/oderconfirmed' component={OderConfirm} />
                   <Route exact path='/bankdrops/usa/t mobile money' component={DropsUSAMoney} />
                   <Route exact path='/bankdrops/usa/vmeno' component={DropsUSAVmeo} />
                   <Route exact path='/bankdrops/uk' component={DropsUk} />
@@ -344,7 +347,7 @@ const App = ({ checkUserSession, currentUser }) => {
                   <Route exact path='/ssnfullz/uk' component={SSNUk} />
                   <Route exact path='/venmo' component={Venmo}/>
                   <Route exact path='/westernunion' component={Western} />
-
+                  <Route exact path='/addoder' component={AddOder} />
 
                   <Route exact path='/mentershipandcoaching' component={M} />
                   <Route exact path='/advancedcarding' component={MCard} />

@@ -9,6 +9,7 @@ import Accordion2 from './accordion2'
 export default function Help() {
   return (
     <>
+      <div className="help">
       <h1 className='help'>Help & Support</h1>
       <h1 className='helpSub'>
         <p className="paragraph">
@@ -64,6 +65,8 @@ export default function Help() {
       <Accordion />
       <Accordion1 />
       <Accordion2 />
+      
+      </div>
       
     
     </>

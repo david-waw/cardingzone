@@ -27,5 +27,15 @@
       margin-top: 30px;
       margin-left: auto;
       font-size: 36px;
+      font-family: monospace;
     }
   }
+  a.checkoutButtons {
+    width: 471px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.d-grid {
+  /* display: grid!important; */
+  display: flex !important;
+}

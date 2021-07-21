@@ -1,9 +1,16 @@
-import React from 'react';
+import React from 'react'
+import Authentic from "./rev"
+import Rev2 from "./rev2"
 
-export default function Authentic() {
-  return (
-    <>
-      <h1 className='authentic'>Authentic</h1>
-    </>
-  );
-}
+
+
+const FinalRev = () => (
+    <div className='homepage'>
+        <Authentic/>
+           <Rev2/>
+      
+      
+    </div>
+)
+export default FinalRev
+

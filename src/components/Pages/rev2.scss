@@ -1,0 +1,33 @@
+.rev2 {
+    margin-top: 20px !important;
+}
+img#imagerev {
+    height: 140px;
+    border-radius: 300px;
+    width: 140px;
+}
+.reviews {
+    margin-top: 20px;
+    width: 100%;
+}
+.reviewCard12 {
+    width: 308px;
+}
+.reviewContainer {
+    /* display: flex; */
+    justify-content: space-between;
+    /* margin-left: 28px; */
+    /* max-width: 100px; */
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    width: 152vh;
+    margin-left: 51px;
+}
+.reviewCards {
+    /* border-style: outset; */
+    width: 350px;
+    height: 407px;
+    margin: 10px;
+    /* background-color: aliceblue; */
+    text-align: center;
+}

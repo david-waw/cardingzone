@@ -7,6 +7,8 @@ export const AddReviews = () => {
     
     const [heading, setHeading] = useState('');
     const [body, setBody] = useState('');
+    const [name, setName] = useState('');
+    const [country, setCountry] = useState('');
    const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
 
@@ -35,12 +37,14 @@ export const AddReviews = () => {
             , () => {
                 storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
                     db.collection('Reviews').add({
-                      
+                        name: name,
+                        contry:country,
                         heading: heading,
                         body: body,
                         ProductImg: url
                     }).then(() => {
-                      
+                        setName('');
+                        setCountry('');
                         setHeading('');
                         setBody('');
                         setProductImg('');
@@ -54,7 +58,7 @@ export const AddReviews = () => {
     return (
         <div className='container'>
             <br />
-            <h2>ADD PRODUCTS</h2>
+            <h2>ADD REVIEW</h2>
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
               
@@ -65,6 +69,14 @@ export const AddReviews = () => {
                 <label htmlFor="Category">Body</label>
                 <input type="text" className='form-control' required
                     onChange={(e) => setBody(e.target.value)} value={body} />
+                <br />
+                <label htmlFor="Category">Name</label>
+                <input type="text" className='form-control' required
+                    onChange={(e) => setName(e.target.value)} value={name} />
+                <br />
+                <label htmlFor="Category">Country</label>
+                <input type="text" className='form-control' required
+                    onChange={(e) => setCountry(e.target.value)} value={country} />
                 <br />
                 <label htmlFor="product-img">Product Image</label>
                 <input type="file" className='form-control' id="file" required

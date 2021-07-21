@@ -1,13 +1,12 @@
+import React, { useContext } from 'react'
 
-import React, {useContext } from 'react'
 import {ReviewContext} from "../Data/CategoryContents/reviews"
-import './reviews.css'
+import "./rev2.scss"
 import { Button } from 'react-bootstrap';
 
-
-const Review = () => {
+const Rev2 = () => {
     const {product} = useContext(ReviewContext)
-    console.log(product)
+   
   
    
     return (
@@ -16,15 +15,15 @@ const Review = () => {
       
             <div className='reviews'>
             <div className="head">
-            <i className="fas fa-expand-alt"></i>
-            <p id='heading'>TOP VERIFIRD REVIEWS</p>
+           
+            <p id='heading'>CUSTOMER FEEDBACK</p>
                 </div>
                 <div className="reviewContainer">
                 {product.length === 0 && <div>slow internet...no products to display</div>}
-                {product.slice(0, 3).map(category => (
+                {product.map(category => (
               
                  
-                    <div className='reviewCard' key={category.ProductsID}>
+                    <div className='reviewCards ' key={category.ProductsID}>
                    
                         <div className='reviewImg'>
                             <img src={category.ProductImg} alt="not found" />
@@ -50,18 +49,15 @@ const Review = () => {
 
                 ))}
                 </div>
-                <div className='reviewBurrons'>
-                <a href="/AddReviews">
-            <Button variant="outline-primary">   <i class="fa fa-star" aria-hidden="true"></i>Leave a review</Button>{' '}
-                </a>
-                <a href="/authenticreviews">
-            <Button variant="outline-primary"><i class="fa fa-play" aria-hidden="true"></i>View All Reviews</Button>{' '}
-           </a>
-                </div>
+               
                
             </div>
           
           </>
     )
 }
-export default Review
+export default Rev2
+
+
+
+   

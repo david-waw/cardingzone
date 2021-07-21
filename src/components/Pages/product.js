@@ -30,15 +30,19 @@ constructor() {
                
                        <div className="details">
                            <div className="big-img">
-                           <img src={image} alt=""/>
+                           <img id="detImg" src={image} alt=""/>
                            </div>
                            <div className="box">
                                <div className="row">
-                               <h2>{name}</h2>
-               <span>${price}</span>
-               <span>{ id}</span>
-                       </div>
-                       <p>{detail}</p>
+                               <h2 id="productName1">{name}</h2>
+               <span id="predPrice">${price}</span>
+              
+             </div>
+             <h3 id="terms">
+               <p id="terms1">TERMS</p>
+             <p id="tetms2">{detail}</p>
+             </h3>
+                     
                        
                        <CustomButton onClick={() => this.props.addItem(({image, name, price,id}))} inverted>Add to cart </CustomButton>
                            </div>

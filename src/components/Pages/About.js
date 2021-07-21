@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
+import "./About.scss"
 export default function About() {
   return (
     <>
@@ -17,9 +18,9 @@ export default function About() {
 <p><span><strong>Happy Carding!</strong></span></p>
       <p>CardingBird Team</p>
       <div className="buttonsgroup">
-        <Button href="#">View all Iphones</Button>
-        <Button href="#">Read Our Reviews</Button>
-        <Button href="#">Service Terms</Button>
+        <Button className="buttonsgroups" href="./cardedproducts/apple iphones"><i class="fa fa-shopping-cart" aria-hidden="true"></i>View all Iphones</Button>
+        <Button className="buttonsgroups" href="./authenticreviews"><i class="fa fa-star" aria-hidden="true"></i>Read Our Reviews</Button>
+        <Button className="buttonsgroups" href="./termsofservice"><i class="fa fa-play" aria-hidden="true"></i>Service Terms</Button>
       </div>
     </>
   );

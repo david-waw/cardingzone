@@ -1,0 +1,55 @@
+input.form-control.addinfo {
+    height: 140px;
+}
+form.form-group.oder {
+    width: 55%;
+}
+.oderContainer {
+    display: flex;
+}
+.oderDetails {
+    margin-left: 99px;
+}
+.oderDetails {
+    margin-left: 99px;
+    border: 3px solid blue;
+    width: 40%;
+    height: fit-content;
+}
+div#oderTitle {
+    font-size: 20px;
+    font-family: emoji;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+div#oderSumary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    font-size: 18px;
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 600;
+    opacity: 0.6;
+    border-bottom: 2.5px solid #aaa;
+  
+}
+p#payment {
+    font-size: 17px;
+    margin-top: 32px;
+    font-weight: 800;
+    border-bottom: 2.5px solid #aaa;
+}
+i.fa.fa-btc.pnt {
+    color: black;
+    font-size: 24px;
+    margin-left: 8px;
+}
+p#payfooter {
+    font-size: 13px;
+    font-family: monospace;
+}
+.accoun{
+    margin: 3px !important;
+}

@@ -18,7 +18,8 @@ export class ReviewContextProvider extends React.Component {
             changes.forEach(change => {
                 if (change.type === 'added') {
                     prevProduct.push({
-                     
+                        name: change.doc.data().name,
+                        contry: change.doc.data().contry,
                        body: change.doc.data().body,
                        heading: change.doc.data().heading,
                         ProductImg: change.doc.data().ProductImg,

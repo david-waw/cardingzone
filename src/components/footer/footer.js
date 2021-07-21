@@ -38,7 +38,7 @@ const Footer = () => {
                         <a href= "/privacypolicy">
                          <div className='footerContent'> PRIVACY TERMS</div>
                         </a>
-                        <a href="/cookiepolicy">
+                        <a href="/coockiepolicy">
                         <div className='footerContent'>COOCKIES ON OUR SITE</div>
                         </a>
                         <a href="/aboutus">
@@ -47,13 +47,15 @@ const Footer = () => {
                         <a href="/aboutus">
                             
                         </a>
-                        <a href= '/vendorterms'>
+                        <a href= '/help'>
                         <div className='footerContent'> VENDOR TERMS</div>
                         </a>
                        
-                      
+                        <a href= '/contactus'>
                         <div className='footerContent'>  SUBMIT VENDOR APPLICATION </div>
+                        </a>
                         </div>
+                      
                     <div className='helpFooter'>
                     <div className='titleone'>
                            HELP AND SUPPORT
@@ -64,9 +66,7 @@ const Footer = () => {
                         <a href='/help'>
                         <div className='footerContent'>FAQS</div>
                         </a>
-                        <a href='/blog'>
-                        <div className='footerContent'>BLOG</div>
-                        </a>
+                      
                         <a href='/contactus'>
                         <div className='footerContent'>CONTACT US</div>
                         </a>
@@ -80,7 +80,7 @@ const Footer = () => {
                     <div className='titleone'>
                            OFFICIAL ICQ TELEGRAM
                         </div>
-                        <div className='footerContent'><i className="fa fa-user-circle fafooter" aria-hidden="true"></i>@CODE142857</div>
+                        <div className='footerContent'> <img id="flower" alt="Qries" src="https://cardingbird.com/wp-content/uploads/2020/10/ICQ-CashoutEmpire-1-100x100.png"/>@CODE142857</div>
                         <div className='footerContent'><i className="fa fa-telegram fafooter" aria-hidden="true"></i>@CODE142857</div>
                         <div className='footerContent'>NOTE:we also have an invite only<br/> telegram group chat reserved for<br/> our "paid customers"</div>
                     

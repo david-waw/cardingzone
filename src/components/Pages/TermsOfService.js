@@ -1,11 +1,13 @@
 import React from 'react';
+import "./terms.scss"
 
 export default function TermsOfService() {
   return (
     <>
-     <p><span ><strong>Last edited:</strong> September 11, 2020</span></p>
+      <div className="termsofservice">
+      <p><span ><strong>Last edited:</strong> September 11, 2020</span></p>
 <p><strong><span >&nbsp;We only offer our services on this platform&nbsp;</span></strong></p>
-<p><span>You may find it strange for a site like ours to have terms and <span ><a  href="/privacy/">Privacy Policy</a></span>, which is the reason we have them, we are strange creatures!</span></p>
+<p><span>You may find it strange for a site like ours to have terms and <span ><a  href="/privacypolicy/">Privacy Policy</a></span>, which is the reason we have them, we are strange creatures!</span></p>
 <p><span>This site was born after the <strong>“Operation Bayonet”</strong> took down Hansa market that we were trading on.</span></p>
 <p><span >We created this <span ><a href="/ShopPage/">shop</a> </span>to serve our loyal customer base who stayed true to us even after the murder of “Hansa Market” by the Dutch Police in operation bayonet.</span></p>
 <p><span>We always welcome new customers but we stay focused on our old ones, they pay us $ to help them make $$$, this is a business, nothing personal.</span></p>
@@ -35,9 +37,9 @@ export default function TermsOfService() {
 <li><span >We will <strong>NOT</strong> responsible for you getting your bank drop <strong>BLOCKED</strong>, if we sell you a bank drop for the US and you login from Australia the bank drop will be killed instantly or trigger security measures such as POI/POA request that will not be possible to pass.</span></li>
 <li><span >When buying CC info you have 120 mins (if you buy more than one that will be 120 minutes X CARD-AMOUNT) to ask for a replacement if the card is dead/decline, considering you have used all the precautionary measures on your side.</span></li>
 <li><span >When asking for CC replacement you will show us video proof of card decline or dead.</span></li>
-<li><span >When we will send you a CC replacement we will accompany that with a Screenshot proof of the second card being alive, so if you kill that card you will need to buy our <span><a  href="/product/advanced-carding-masterclass-universal/">Advanced Carding Masterclass Mentorship</a></span> package and learn how to card.&nbsp;</span></li>
+<li><span >When we will send you a CC replacement we will accompany that with a Screenshot proof of the second card being alive, so if you kill that card you will need to buy our <span><a  href="/advancedcarding">Advanced Carding Masterclass Mentorship</a></span> package and learn how to card.&nbsp;</span></li>
 <li>
-<div><span >Venmo and Cashapp transfers have only 1 replacement if funds are frozen or chargeback within our guaranteed timeframe, everything we sell we do ourself the reason we sell is that we have more a lot of supply and we have partnered with vendors who also have a lot of quality stuff to offer, we suggest you buy our <span ><a href="/product-category/mentorship-worldwide/advanced-venmo-masterclass/">Advanced Venmo Carding Masterclass</a></span> and learn how to cash out with Venmo. For CashApp see our <span ><a href="/product/advanced-cashapp-cashout-masterclass-universal/">Advanced CashApp Carding Masterclass</a></span>.</span></div>
+<div><span >Venmo and Cashapp transfers have only 1 replacement if funds are frozen or chargeback within our guaranteed timeframe, everything we sell we do ourself the reason we sell is that we have more a lot of supply and we have partnered with vendors who also have a lot of quality stuff to offer, we suggest you buy our <span ><a href="/advanced venmo">Advanced Venmo Carding Masterclass</a></span> and learn how to cash out with Venmo. For CashApp see our <span ><a href="/advancedcashapp">Advanced CashApp Carding Masterclass</a></span>.</span></div>
 </li>
 <li>
 <div class="details"><span >We need clear and visible <strong>VIDEO PROOF</strong> of the chargeback/frozen/reversed funds for CashApp and Venmo transfers.</span></div>
@@ -48,9 +50,11 @@ export default function TermsOfService() {
 <li><span >We accept <strong>BITCOIN, LITECOIN &amp; MONERO</strong> as our form of payment at this moment.</span></li>
 <li><span ><span >Contact us <strong>ONLY</strong> if you have any serious questions and we will be happy to answer them, do <strong>NOT</strong> contact us with silly generic questions that are so obvious that we didn’t even bother putting them on our site if you contacted us and did not receive a reply you can take a hint that your questions were not worth replying to.</span></span></li>
 </ul>
-<p><span ><strong><span >&nbsp;PLEASE NOTE:&nbsp;</span></strong> <span >These terms above are by no means exhaustive, we can take action outside of our terms if we feel it right to do so. This is a fair shop for everyone to come and make $$$ while we also make $ in the process.</span></span></p>
+<p><span ><strong><span id="note">&nbsp;PLEASE NOTE:&nbsp;</span></strong> <span >These terms above are by no means exhaustive, we can take action outside of our terms if we feel it right to do so. This is a fair shop for everyone to come and make $$$ while we also make $ in the process.</span></span></p>
 <p><span ><span >We welcome everyone, especially our loyal customer base on our site.</span></span></p>
 
+      </div>
+    
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./privacy.scss"
 
 export default function Privacy() {
   return (
@@ -39,9 +40,9 @@ export default function Privacy() {
 <p><span >Your continued use of our site signifies your acceptance of this policy. If you do not accept the policy then please do not use this site. When registering we will further request your explicit acceptance of the privacy policy.</span></p>
 <h2><span ><strong><span>COOKIES POLICY</span></strong></span></h2>
 <p><span >Cookies are small text files which are set by us on your computer which allow us to provide certain functionality on our site, such as being able to log in, or remembering certain preferences.</span></p>
-<p><span ><span >We have a detailed cookie policy and more information about the cookies that we set on</span>&nbsp;<a href="/cookies"><span >this page</span></a>.</span></p>
+<p><span ><span >We have a detailed cookie policy and more information about the cookies that we set on</span>&nbsp;<a href="/cookiepolicy"><span >this page</span></a>.</span></p>
 <h2><strong><span >TERMS OF OUR SERVICES</span></strong></h2>
-<p><span>We recommend you go through our <span><a  href="/terms/">Terms of Service</a></span> Here if you haven’t already done so to familiarise yourself with the rules set on our platform to protect our buyers.</span></p>
+<p><span>We recommend you go through our <span><a  href="/termsofservice/">Terms of Service</a></span> Here if you haven’t already done so to familiarise yourself with the rules set on our platform to protect our buyers.</span></p>
 <h2><span ><strong><span >CHANGES TO OUR POLICY</span></strong></span></h2>
 <p><span >We may make changes to this policy at any time. You may be asked to review and re-accept the information in this policy if it changes in the future.</span></p>
 </div>
