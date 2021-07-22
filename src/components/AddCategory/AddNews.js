@@ -62,24 +62,24 @@ export const AddReviews = () => {
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
               
-                <label htmlFor="Category">Heading</label>
-                <input type="text" className='form-control' required
+                
+                <input type="text" className='form-control' required placeholder="Heading"
                     onChange={(e) => setHeading(e.target.value)} value={heading} />
                 <br />
-                <label htmlFor="Category">Body</label>
-                <input type="text" className='form-control' required
+              
+                <input type="text" className='form-control' required placeholder="Body"
                     onChange={(e) => setBody(e.target.value)} value={body} />
                 <br />
-                <label htmlFor="Category">Name</label>
-                <input type="text" className='form-control' required
+               
+                <input type="text" className='form-control' required placeholder="Name"
                     onChange={(e) => setName(e.target.value)} value={name} />
                 <br />
-                <label htmlFor="Category">Country</label>
-                <input type="text" className='form-control' required
+              
+                <input type="text" className='form-control' required placeholder="Country"
                     onChange={(e) => setCountry(e.target.value)} value={country} />
                 <br />
-                <label htmlFor="product-img">Product Image</label>
-                <input type="file" className='form-control' id="file" required
+               
+                <input type="file" className='form-control' id="file" required placeholder="Product Image"
                     onChange={productImgHandler} />
                 <br />
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>

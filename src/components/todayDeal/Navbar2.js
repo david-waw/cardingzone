@@ -140,9 +140,9 @@ function Navbar({currentUser, hidden, signOutStart }) {
                     </li>
                   
                   
-                    <li className='nav-item'>
+                    <li className='nav-item' >
                         {currentUser ? (
-                            <div className='nav-links' onClick={signOutStart}>
+                            <div className='nav-links' id="signinout"  onClick={signOutStart}>
                                 SIGN OUT
                             </div>
                         ) : (

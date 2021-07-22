@@ -2,17 +2,32 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Button from 'react-bootstrap/Button'
-
+import "./checkout.scss"
 import CheckoutItem from './checkout-item';
-
+import { Redirect } from "react-router-dom";
 import {
   selectCartItems,
   selectCartTotal
 } from '../../redux/cart/cart.selectors';
+import {
+  selectCurrentUser,
+} from '../../redux/user/user.selectors';
 
-import './checkout.scss';
+function sayHello() {
+ 
+  let userData = JSON.parse(localStorage.getItem('persist:root'));
+  let ver = userData.user.[18]
+  if (ver=="d") {
+    window.location.href = '/addoder';
+    
+  } else {
+    alert("Please Sign In")
+    
+  }
+}
 
-const CheckoutPage = ({ cartItems, total }) => (
+
+const CheckoutPage = ({ cartItems, total}) => (
   <div className='checkout-page'>
     <div className='checkout-header'>
       <div className='header-block'>
@@ -35,22 +50,26 @@ const CheckoutPage = ({ cartItems, total }) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <div className='total'>TOTAL: ${total}</div>
+   
     <div className="d-grid gap-2">
     <Button className="checkoutButtons"  href="./ShopPage"  variant="outline-secondary" size="lg">
   <i class="fa fa-shopping-basket" aria-hidden="true"></i>Continue Shopping
   </Button>
-  <Button className="checkoutButtons" href="./addoder"  variant="outline-primary" size="lg">
+  <Button className="checkoutButtons" id="oddBtn"  onClick={sayHello} variant="outline-primary" size="lg">
    <i class="fa fa-btc" aria-hidden="true"></i>Proceed To Checkout
   </Button>
   
 </div>
    
   </div>
+  
 );
+
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
-  total: selectCartTotal
+  total: selectCartTotal,
+  user:selectCurrentUser
 });
 
 export default connect(mapStateToProps)(CheckoutPage);

@@ -53,12 +53,13 @@ export const AddAbout = () => {
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
               
-                <label htmlFor="Category">About</label>
-                <input type="text" className='form-control about' required
+               
+                <input type="text" className='form-control about' required placeholder="About"
                     onChange={(e) => setAbout(e.target.value)} value={about} />
                 <br />
-                <label htmlFor="product-img">Product Image</label>
-             
+              
+                <input type="file" className='form-control' id="file" required placeholder="Product Image"
+                    onChange={productImgHandler} />
                 <br />
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>
             </form>

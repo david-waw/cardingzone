@@ -79,32 +79,32 @@ export const Authentic = () => {
       <hr />
       <form autoComplete="off" className='form-group' onSubmit={addProduct}>
 
-        <label htmlFor="Category">Username</label>
-        <input type="text" className='form-control' required
+        
+        <input type="text" className='form-control' required placeholder="Username"
           onChange={(e) => setUsername(e.target.value)} value={username} />
         <br />
-        <label htmlFor="Category">Account Email</label>
-        <input type="text" className='form-control' required
+       
+        <input type="email" className='form-control' required placeholder="Email"
           onChange={(e) => setEmail(e.target.value)} value={email} />
         <br />
-        <label htmlFor="Category">Oder Number</label>
-        <input type="text" className='form-control' required
+       
+        <input type="text" className='form-control' required   placeholder="Oder Number"
           onChange={(e) => setOder(e.target.value)} value={oder} />
         <br />
-        <label htmlFor="Category">Star Rating</label>
-        <input type="text" className='form-control' required
+        
+        <input type="text" className='form-control' required  placeholder="Star Rating"
           onChange={(e) => setRating(e.target.value)} value={rating} />
         <br />
-        <label htmlFor="Category">Type Feedback Here</label>
-        <input type="text" className='form-control' required
+      
+        <input type="text" className='form-control' required  placeholder="Type Feedback Here"
           onChange={(e) => setFeed(e.target.value)} value={feed} />
         <br />
-        <label htmlFor="Category">Purchased Item</label>
-        <input type="text" className='form-control' required
+        
+        <input type="text" className='form-control' required  placeholder="Purchasd Item"
           onChange={(e) => setPurchase(e.target.value)} value={purchase} />
         <br />
-        <label htmlFor="product-img">Product Image</label>
-        <input type="file" className='form-control' id="file" required
+       
+        <input type="file" className='form-control' id="file" required placeholder="Product Images"
           onChange={productImgHandler} />
         <br />
         <button type="submit" className='btn btn-success btn-md mybtn'>Submit Feedback</button>

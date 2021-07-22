@@ -54,12 +54,12 @@ export const AddCategory = () => {
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
               
-                <label htmlFor="Category">Category</label>
-                <input type="text" className='form-control' required
+               
+                <input type="text" className='form-control' required placeholder="category"
                     onChange={(e) => setCategory(e.target.value)} value={category} />
                 <br />
-                <label htmlFor="product-img">Product Image</label>
-                <input type="file" className='form-control' id="file" required
+               
+                <input type="file" className='form-control' id="file" required placeholder="Product Images"
                     onChange={productImgHandler} />
                 <br />
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>

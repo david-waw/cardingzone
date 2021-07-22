@@ -65,33 +65,30 @@ export const AddProducts = () => {
             <h2>ADD PRODUCTS</h2>
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
-                <label htmlFor="product-name">Product Name</label>
-                <input type="text" className='form-control' required
+               
+                <input type="text" className='form-control' required placeholder="Product Name"
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
                 <br />
                 
-                <label htmlFor="Category">Category</label>
-                <input type="text" className='form-control' required
+               
+                <input type="text" className='form-control' required placeholder="Category"
                     onChange={(e) => setCategory(e.target.value)} value={category} />
                 <br />
-                <label htmlFor="Country">Country</label>
-                <input type="text" className='form-control' required
+              
+                <input type="text" className='form-control' required placeholder="Country"
                     onChange={(e) => setCountry(e.target.value)} value={country} />
                 <br />
-                <label htmlFor="product-price">Product Price</label>
-                <input type="number" className='form-control' required
+              
+                <input type="number" className='form-control' required placeholder="Product Price"
                     onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
                 <br />
-                <label htmlFor="product-img">Product Image</label>
-                <input type="file" className='form-control' id="file" required
+              
+                <input type="file" className='form-control' id="file" required placeholder="Product Image"
                     onChange={productImgHandler} />
                 <br />
-                <label htmlFor="product-name">Terms</label>
-                <input type="text" className='form-control bg' required
-                    onChange={(e) => setTerms(e.target.value)} value={terms} />
-                <br />
-                <label htmlFor="product-name">Description</label>
-                <input type="text" className='form-control bg' required
+              
+             
+                <input type="text" className='form-control bg' required placeholder="Description"
                     onChange={(e) => setDescription(e.target.value)} value={description} />
                 <br />
               

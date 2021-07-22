@@ -7,13 +7,12 @@ form.form-group.oder {
 .oderContainer {
     display: flex;
 }
-.oderDetails {
-    margin-left: 99px;
-}
+
 .oderDetails {
     margin-left: 99px;
     border: 3px solid blue;
-    width: 40%;
+    width: 68%;
+    height: -moz-fit-content;
     height: fit-content;
 }
 div#oderTitle {
@@ -52,4 +51,26 @@ p#payfooter {
 }
 .accoun{
     margin: 3px !important;
+}
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+    /* height: 600px; */
+    padding-bottom: 77px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+button#bit\ button {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    margin-left: 32%;
+}
+p.copysucesss {
+    text-align: center;
+    font-family: cursive;
+    color: red;
+    font-size: 19px;
+}
+.containerer {
+    background: aliceblue;
+    padding-bottom: 34px;
 }

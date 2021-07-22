@@ -39,7 +39,7 @@ constructor() {
                <span id="prodId">{ id}</span>
              </div>
              <h3 id="terms">
-               <p id="terms1">TERMS</p>
+               <p id="terms1">DESCRIPTION</p>
              <p id="tetms2">{detail}</p>
              </h3>
                      

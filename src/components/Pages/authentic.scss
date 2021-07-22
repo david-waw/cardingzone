@@ -9,26 +9,16 @@
     height: 813px;
     width: 936px !important;
 }
-.container {
-    position: relative;
-    background-color: cadetblue;
-}
 
-.container::before {    
-    content: "";
-    background-image: url('https://thumbs.dreamstime.com/b/faceless-anonymous-computer-hacker-laptop-desk-faceless-anonymous-computer-hacker-laptop-114782802.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.1;
-}
 
-input.form-control {
-    border-radius: 30px;
-}
+
+
+input:invalid {
+    border: 2px solid red;
+  }
+  input:valid {
+    background-color: #ddffdd;
+  }
 form.form-group {
     position: sticky;
     width: 80%;
