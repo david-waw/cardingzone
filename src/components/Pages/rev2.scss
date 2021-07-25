@@ -9,19 +9,21 @@ img#imagerev {
 .reviews {
     margin-top: 20px;
     width: 100%;
+  
 }
 .reviewCard12 {
     width: 308px;
 }
 .reviewContainer {
-    /* display: flex; */
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
     /* margin-left: 28px; */
     /* max-width: 100px; */
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 200px 200px 200px;
-    width: 152vh;
-    margin-left: 51px;
+    /* width: 152vh; */
+    /* margin-left: 51px; */
+    flex-wrap: wrap;
 }
 .reviewCards {
     /* border-style: outset; */

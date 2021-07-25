@@ -1,7 +1,8 @@
 .footer{
-    height: 500px;
+    height: auto;
     margin-top: 150px;
     background-color: beige;
+    width:100%;
    
 }
 .footerOne {
@@ -9,6 +10,8 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .Footertwo {
     display: flex;

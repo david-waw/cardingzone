@@ -17,9 +17,36 @@ export class BootsrapCarousel extends Component {
             slidesToShow: 8,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 2000,
+          speed: 2000,
+         
             autoplaySpeed: 4000,
-            cssEase: "linear"
+          cssEase: "linear",
+          responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
       };
       const { category } = this.context
      
