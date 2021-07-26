@@ -8,11 +8,13 @@ import Button from 'react-bootstrap/Button'
 export default function Contact() {
   return (
     <>
+      <div id="maincontactcontainer">
       <div className="contactContainer">
       <div className="contactHead" style={{ backgroundImage: `url(${background})` }}>
         <h2 className="contactTitle" >CONTACT US!</h2>
         <p className="contactSub" ><span >You must use PGP when contacting us, any messages that are send in plain text will be deleted and ignored.</span></p>
-        <CardGroup>
+        </div>
+            <CardGroup>
   
   <Card>
             <Card.Img />
@@ -39,10 +41,11 @@ export default function Contact() {
   </Card>
           </CardGroup>
           
-        </div>
+      
        
        
       </div>
+      
       <div className="otherContent">
         <h2 className="kaheading">BEFORE YOU CONTACT US</h2>
         <h2 className="kasubheading"> HAVE YOU READ OUR FAQ’s?</h2>
@@ -58,6 +61,8 @@ export default function Contact() {
       <h2 className="compantTitle"> COMPANY DETAILS</h2>
 <p> CARDING BIRD</p>
 <p>HELPING YOU MAKE MONEY SINCE THE DEATH OF HANSA MARKET</p>
+      </div>
+     
       </div>
      
     </>

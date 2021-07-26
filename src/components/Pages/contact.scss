@@ -31,8 +31,14 @@ p.contactSub {
     padding: 1rem 1rem;
     background: aliceblue;
 }
-.contactContainer{
-    height:90vh;
+.contactContainer {
+    /* height: fit-content; */
+    /* height: fit-content; */
+    /* margin-bottom: auto; */
+    height: 214vh;
+    /* height: 100%; */
+    max-height: -moz-max-content;
+    /* white-space: nowrap; */
 }
 h2.kaheading {
     text-align: center;
@@ -47,10 +53,10 @@ h2.kasubheading {
 .someContents {
     opacity: 0.8;
     width: 70%;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     margin-right: 0px;
-    margin-left: 150px;
+    margin-left: 22px;
 }
 .companyDetails {
     margin-top: 40px;

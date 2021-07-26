@@ -40,7 +40,7 @@ export default function Help() {
           </div>
       </div>
       <div className='helpPage'>
-   <img src={bird} alt="Logo" />;
+   <img id="birdhelp" src={bird} alt="Logo" />;
       </div>
       <div className='helpPage2'>
       <div className="subHelp">
@@ -56,12 +56,13 @@ export default function Help() {
           because we archieve ours everyday
           
           </div>
-        </div>
-      </div>
-      <div className="head">
+          </div>
+          <div className="head">
             <i className="fas fa-expand-alt"></i>
         <p id='heading'>OUR FAQS</p>
         </div>
+      </div>
+    
       <Accordion />
       <Accordion1 />
       <Accordion2 />

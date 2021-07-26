@@ -1,5 +1,5 @@
 
-.productsContainer{
+.productsContainer {
     position: relative;
     max-width: 100%;
     min-height: 350px;
@@ -12,10 +12,11 @@
     user-select: none;
     transition: 0.25s;
     flex-wrap: wrap;
-    width: 80%;
     /* justify-content: flex-end; */
     float: right;
     margin-right: 0px;
+    /* width: 100%; */
+    width: 70vw;
 }
 .Shop {
     height: 900px;
@@ -76,14 +77,14 @@
 button.btn.btn-outline-primary {
     /* justify-content: center; */
     margin-left: 3%;
-    width: 300px;
-    border-radius: 20px;
+    width: 34vw;
+    border-radius: 20vw;
+    font-size: 1vw;
 }
 .wrap {
-    display:grid;
-    float:right;
-    width:80%;
-    height: 1000px;
+    display: grid;
+    float: right;
+    width: 73vw;
 }
 ul.paginate {
     display: flex;

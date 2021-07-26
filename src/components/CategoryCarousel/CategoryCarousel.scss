@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
-    i.fas.fa-expand-alt,.fa-clock-o{
-        opacity: 0.5;
-    font-size: 30px;
-    padding-top: 2px;
-    padding-left: 18px;
-    }
+i.fas.fa-expand-alt, .fa-clock-o {
+    opacity: 0.5;
+    font-size: 3vw;
+    padding-top: 0vw;
+    padding-left: 2vw;
+}
     .head{
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center; /* making vertical centerign of all children */
+        width:100vw;
     }
     .head::before{
         content: '';
@@ -26,13 +27,13 @@
         border-bottom: solid 2px;
         opacity:0.2;
       }
-    p#heading{
+      p#heading {
         margin: 0px;
-        margin-left: 10px;
+        margin-left: 2vw;
         font-family: Roboto;
         opacity: 0.6;
-        font-size: 30px;
-        padding-right: 18px;
+        font-size: 3vw;
+        padding-right: 3vw;
         font-weight: 800;
     }
     .title{

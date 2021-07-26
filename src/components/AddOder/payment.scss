@@ -9,11 +9,11 @@ form.form-group.oder {
 }
 
 .oderDetails {
-    margin-left: 99px;
     border: 3px solid blue;
-    width: 68%;
+    width: 94vw;
     height: -moz-fit-content;
     height: fit-content;
+    word-break: break-all;
 }
 div#oderTitle {
     font-size: 20px;
@@ -27,7 +27,7 @@ div#oderSumary {
     display: flex;
     justify-content: space-between;
     margin-top: 56px;
-    font-size: 18px;
+    font-size: 3vw;
     font-family: 'Font Awesome 5 Brands';
     font-weight: 600;
     opacity: 0.6;
@@ -62,7 +62,8 @@ p#payfooter {
 button#bit\ button {
     margin-top: 20px;
     font-family: 'Roboto';
-    margin-left: 32%;
+    /* margin-left: 32%; */
+    font-size: 4vw;
 }
 p.copysucesss {
     text-align: center;

@@ -23,17 +23,12 @@
       }
     }
   
-    .total {
-      margin-top: 30px;
-      margin-left: auto;
-      font-size: 36px;
-      font-family: monospace;
-    }
   }
   a.checkoutButtons {
-    width: 471px;
-    border-radius: 50px;
+    width: 38vw;
+    border-radius: 30vw;
     margin-left: 20px;
+    font-size: 2vw;
 }
 .d-grid {
   /* display: grid!important; */
@@ -41,4 +36,26 @@
 }
 #oddBtn{
   margin-left: 12%;
+}
+.header-block {
+  font-size: 1.3vw;
+}
+.checkout-item .image-container {
+  width: 11vw;
+  padding-right: 15px;
+}
+.checkout-item {
+  width: 100%;
+  display: flex;
+  min-height: 100px;
+  border-bottom: 1px solid darkgrey;
+  padding: 15px 0;
+  font-size: 1.5vw;
+  align-items: center;
+}
+.checkout-page .total {
+  margin-top: 30px;
+  margin-left: auto;
+  font-size: 3vw;
+  font-family: monospace;
 }

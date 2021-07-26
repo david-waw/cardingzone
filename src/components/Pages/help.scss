@@ -1,12 +1,12 @@
 h1.help {
     font-family: auto;
     font-size: 50px;
-    margin-left: 34%;
+    margin-left: 14%;
 }
 h1.helpSub {
     font-size: 19px;
     font-family: 'FontAwesome';
-    margin-left: 40%;
+    margin-left: 14%;
 }
 .fa.fa-hand-paper-o {
     font-family: "Font Awesome 5 Free";
@@ -48,10 +48,17 @@ p.subHelpTitle {
 }
 .helpDiv {
     display: flex;
+    flex-wrap: wrap;
+    /* height: 280vh; */
+    margin-bottom: 75vh;
 }
 h1.help{
     font-size: 70px !important;
 }
 .help {
     font-family: 'Roboto';
+}
+#birdhelp {
+    vertical-align: middle;
+    height: 30vw;
 }

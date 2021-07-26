@@ -11,19 +11,19 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 90vh;
+  height: 123vh;
   background: #fff;
 `;
 
 const Container = styled.div`
-  position: absolute;
+ 
 width:90%;
   box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
-  height:90vh;
+  height:229vh;
 `;
 
 const Wrap = styled.div`
-  height:30px;
+  height:77px;
   color: black;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ const Wrap = styled.div`
 
 const Dropdown = styled.div`
  width: 100%;
-    height: 230px;
+    height: auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

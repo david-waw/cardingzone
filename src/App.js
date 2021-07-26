@@ -120,6 +120,7 @@ import BurnersSimIndia from "./components/Pages/burnerssim8"
 import BurnersSimGhana from "./components/Pages/burnerssim9"
 import BurnersSimGermany from "./components/Pages/burnerssim10"
 import BurnersSimFrance from "./components/Pages/burnerssim11"
+import Navigation from "./components/navigation/navigation"
 import BurnersSimEgypt from "./components/Pages/burnerssim12"
 import BurnersSimCanada from "./components/Pages/burnerssim13"
 import BurnersSimAustralia from "./components/Pages/burnerssim14"
@@ -207,7 +208,7 @@ import { ReviewContextProvider } from './components/Data/CategoryContents/review
 import { ProductContextProvider } from './components/Data//CategoryContents/todayDeals.js'
 
 import { NewsContextProvider } from "./components/Data/CategoryContents/news.jsx"
-import Navbar from './components/todayDeal/Navbar2'
+import Navbare from './components/todayDeal/Navbar2'
 import { auth, createUserProfileDocument } from './components/Config/config';
 
 import { setCurrentUser } from './redux/user/user.actions';
@@ -226,7 +227,9 @@ const App = ({ checkUserSession, currentUser }) => {
           <ProductContextProvider>
             <CategoryContextProvider>
               <div>
-                <Navbar />
+          
+                <Navbare />
+               
                 <Switch>
                   <Route exact path='/' component={HomePage} />
                   <Route exact path='/aboutus' component={About} />

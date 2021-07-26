@@ -1,7 +1,7 @@
-.slick-slide  {
-    margin: 0 4px;
-  
-  }
+.slick-slide {
+  /* margin: 0 4px; */
+  margin-bottom:8vw;
+}
   .slick-track{
       height:80px
   }
@@ -14,10 +14,10 @@
     outline: none;
   }
   .img {
-    width: 78px;
-    height: 78px;
+    width: 9vw;
+    height: 9vw;
     object-fit: cover;
-    border-radius: 72px;
+    border-radius: 40vw;
 }
   .product-card,.product-img{
     width: 100px !important;
@@ -34,10 +34,10 @@
   background:transparent;
 }
 .product-name {
-  text-align: center;
-  font-size: 12px;
+  
+  font-size: 1.5vw;
   text-transform: capitalize;
   color: black;
-  margin-top: 15px;
+  margin-top: 1vw;
   font-family: 'Roboto';
 }
