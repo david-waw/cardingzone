@@ -36,7 +36,7 @@
         background-size: cover;
         background-position: center;
         margin-bottom: 5px;
-        opacity: 0.5;
+       
       }
       .custom-button {
         width: 80%;
@@ -59,12 +59,12 @@
     }
 .productCountry {
     font-size: 13px;
-    font-family: cursive;
-    opacity: 0.5;
+    font-family: inherit;
+    opacity: 0.9;
 }
 .productName {
     font-size: 18px;
-    font-family: cursive;
+    font-family:inherit;
 }
 .Price {
     margin-top: 3px;

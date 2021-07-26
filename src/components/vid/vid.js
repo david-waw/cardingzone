@@ -7,23 +7,23 @@ import { useHistory } from "react-router-dom";
 function VideoArea() {
     const history = useHistory();
 
-  function handleClick() {
-    history.push("/ShopPage");
-  }
-    
+    function handleClick() {
+        history.push("/ShopPage");
+    }
+
     return (
         <>
             <div className='vid'>
-    <video autoPlay loop muted>
-        <source src={Video} type='video/mp4' />
-        </video>
-        <div className='vidContent'>
-            <p id="hansa" className='sameColor'>We Are Hansa Vendor</p>
-            <p id='carding' className='sameColor'>@CARDINGBIRD</p>
-            <p id='over' className='sameColor'>Over 1600+ Sales On Hansa Market</p>
-            <button className='sameColor browseButton' onClick={handleClick}><i className="fa fa-shopping-bag" aria-hidden="true"></i>BROWSE NOW</button>
-        </div>
-    </div>
+                <video autoPlay loop muted>
+                    <source src={Video} type='video/mp4' />
+                </video>
+                <div className='vidContent'>
+                    <p id="hansa" className='sameColor'>We Are Hansa Vendor</p>
+                    <p id='carding' className='sameColor'>@cardingdrill</p>
+                    <p id='over' className='sameColor'>Over 1600+ Sales On Hansa Market</p>
+                    <button className='sameColor browseButton' onClick={handleClick}><i className="fa fa-shopping-bag" aria-hidden="true"></i>BROWSE NOW</button>
+                </div>
+            </div>
         </>
     );
 }

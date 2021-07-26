@@ -80,7 +80,7 @@ function Navbare({currentUser, hidden, signOutStart }) {
                     <img className='logo' src={logo} alt="Logo" />
                     <div id='logo'>
                         CARDING<br />
-                        BIRD
+                       DRILL
                     </div>
                     
               

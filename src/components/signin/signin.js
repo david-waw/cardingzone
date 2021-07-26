@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import Spinner from 'react-bootstrap/Spinner'
 
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custombutton/custombutton';
@@ -8,7 +9,12 @@ import { signUpStart } from '../../redux/user/user.actions';
 
 import { SignUpContainer, SignUpTitle } from './sign-up.styles';
 
+
+
 const SignUp = ({ signUpStart }) => {
+  const [loading, setLoading] = useState(false);
+ 
+
   const [userCredentials, setUserCredentials] = useState({
     displayName: '',
     email: '',
@@ -72,7 +78,24 @@ const SignUp = ({ signUpStart }) => {
           label='Confirm Password'
           required
         />
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <CustomButton onClick={() => {
+    setLoading(true);
+    setTimeout(function(){ 
+       setLoading(false);
+      
+    }, 5000);
+        }}
+  type='submit'>{loading ? (
+                            <div>
+                            <Spinner className="spinnerr" animation="border" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner>
+                            </div>
+                        ) : (
+                          <div>
+                         SIGN UP
+                            </div>
+                        )}</CustomButton>
       </form>
     </SignUpContainer>
   );

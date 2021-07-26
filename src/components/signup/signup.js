@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import Spinner from 'react-bootstrap/Spinner'
 
 import FormInput from '../form-input/form-input';
 import CustomButton from '../custombutton/custombutton';
@@ -16,6 +17,7 @@ import {
 } from './sign-in.styles';
 
 const SignIn = ({ emailSignInStart, googleSignInStart }) => {
+  const [loading, setLoading] = useState(false);
   const [userCredentials, setCredentials] = useState({
     email: '',
     password: ''
@@ -58,14 +60,24 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           required
         />
         <ButtonsBarContainer>
-          <CustomButton type='submit'> Sign in </CustomButton>
-          <CustomButton
-            type='button'
-            onClick={googleSignInStart}
-            isGoogleSignIn
-          >
-            Google Sign
-          </CustomButton>
+          <CustomButton onClick={() => {
+    setLoading(true);
+    setTimeout(function(){ 
+       setLoading(false);
+      
+    }, 5000);
+        }} type='submit'> {loading ? (
+                            <div>
+                            <Spinner className="spinnerr" animation="border" role="status">
+  <span className="visually-hidden">Loading...</span>
+</Spinner>
+                            </div>
+                        ) : (
+                          <div>
+                         SIGN IN
+                            </div>
+                        )}</CustomButton>
+        
         </ButtonsBarContainer>
       </form>
     </SignInContainer>

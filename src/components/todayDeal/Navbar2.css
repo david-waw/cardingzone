@@ -3,13 +3,29 @@ a.navbar-brand {
   width: fit-content;
 }
 img.logo {
-  width: 12vw;
+  width: 8vw;
+  height: 8vw;
 }
 div#logo {
   font-family: fantasy;
-  font-size: 4vw;
+  font-size: 3vw;
   width: fit-content;
   display:flex;
+}
+@media all and (max-width: 900px) {
+  /* css */
+    a.navbar-logo {
+      /* width: 21vw; */
+     
+      margin-left: 25vw;
+  
+  }
+  div#logo {
+  
+    font-size: 5vw;
+    
+}
+
 }
 .bg-dark {
   /* background-color: #212529!important; */

@@ -44,7 +44,7 @@ constructor() {
              </h3>
                      
                        
-                       <CustomButton onClick={() => this.props.addItem(({image, name, price,id}))} inverted>Add to cart </CustomButton>
+                       <CustomButton id="addbutton" onClick={() => this.props.addItem(({image, name, price,id}))} inverted>Add to cart </CustomButton>
                            </div>
                        </div>
               

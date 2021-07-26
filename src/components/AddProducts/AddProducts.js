@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { storage, db } from '../Config/config'
+import firebase from 'firebase/app'
 import "./AddProducts.scss"
 export const AddProducts = () => {
 
     const [productName, setProductName] = useState('');
+    const [ createdAt, setCreatedAt] = useState('');
     const [description, setDescription] = useState('');
     const [terms, setTerms] = useState('');
     const [category, setCategory] = useState('');
@@ -43,7 +45,8 @@ export const AddProducts = () => {
                         ProductPrice: Number(productPrice),
                         ProductImg: url,
                         description: description,
-                        terms:terms
+                        terms: terms,
+                        timestamp: firebase.firestore.Timestamp.fromDate(new Date())
                     }).then(() => {
                         setDescription('');
                         setProductName('');

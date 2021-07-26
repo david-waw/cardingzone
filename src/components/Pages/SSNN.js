@@ -5,7 +5,7 @@ import SideNav from "../todayDeal/NavBar"
 import ReactPaginate from "react-paginate"
 import { useHistory } from "react-router-dom";
 import CustomButton from '../custombutton/custombutton'
-
+import Spinner from 'react-bootstrap/Spinner'
 
 const SSNN = () => {
     const { product } = useContext(ProductContext)
@@ -43,7 +43,9 @@ const SSNN = () => {
                 <SideNav />
                 <div className='wrap'>
                     <div className='productsContainer'>
-                        {product.length === 0 && <div>slow internet...no products to display</div>}
+                        {product.length === 0 && <div><Spinner animation="border" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                        </Spinner></div>}
                         {product.filter(name => name.category.includes('SSN'))
                             .filter(name => name.country.includes('newzealand'))
                             .slice(pagesVisited, pagesVisited + itemsPerPage).map(category => (
@@ -60,7 +62,7 @@ const SSNN = () => {
                                         {category.ProductName}
                                     </div>
                                     <div className='Price'>
-                                        {category.ProductPrice}
+                                        ${category.ProductPrice}
                                     </div>
                                     <CustomButton inverted onClick={() => click(category.ProductPrice, category.description, category.ProductName, category.ProductImg)}>DETAILS</CustomButton>
                                 </div>
@@ -87,5 +89,5 @@ const SSNN = () => {
         </>
     )
 }
-export default  SSNN
+export default SSNN
 

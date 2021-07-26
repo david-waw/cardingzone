@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+
 .details{
     display: flex;
     justify-content: space-around;
@@ -96,25 +98,35 @@
     font-weight: 800;
     opacity: 0.8;
     border-bottom: 2.5px solid #aaa;
+    font-size: 4vw;
+    font-family: 'Nunito', sans-serif;
 }
 span#predPrice {
-  font-size: 34px;
+  font-size: 5vw;
   float: right;
   color: black;
   font-weight: 700;
-  font-family: auto;
+  font-family: 'Nunito', sans-serif;
 }
 p#tetms2 {
-  font-size: 23px;
+  font-size: 3vw;
   font-weight: 400;
-  opacity: 0.4;
+  opacity: 0.6;
+  font-family: 'Nunito', sans-serif;
 }
 p#terms1 {
   background: orange;
+  width: -moz-fit-content;
   width: fit-content;
   font-family: system-ui;
-  font-size: 21px;
+  font-size: 3vw;
+  font-family: 'Nunito', sans-serif;
 }
 span#prodId {
   opacity: 0;
+}
+button#addbutton {
+  width: 5vw;
+  font-size: 2vw;
+  font-family: 'Nunito', sans-serif;
 }

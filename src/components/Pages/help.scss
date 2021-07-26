@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+
 h1.help {
     font-family: auto;
     font-size: 50px;
@@ -11,22 +13,22 @@ h1.helpSub {
 .fa.fa-hand-paper-o {
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    font-size: 50px;
+    font-size: 4vw;
 }
 i.fa.fa-desktop{
     font-family: "Font Awesome 5 Free";
     margin-top: 40px;
-    font-size: 50px;
+    font-size: 4vw;
 }
 .fa.fa-star-o{
     font-family: "Font Awesome 5 Free";
     font-weight: 400;
-    font-size: 50px;
+    font-size: 4vw;
 }
 i.fa.fa-share-alt{
     font-family: "Font Awesome 5 Free";
     margin-top: 40px;
-    font-size: 50px;
+    font-size: 4vw;
 }
 .finishing {
     font-size: 25px;
@@ -37,7 +39,7 @@ i.fa.fa-share-alt{
 }
 
 p.subHelpTitle {
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 600;
 }
 .subHelp{
@@ -45,20 +47,34 @@ p.subHelpTitle {
 }
 .subHelp {
     width: 250px;
+    font-family: 'Nunito', sans-serif;
 }
 .helpDiv {
     display: flex;
     flex-wrap: wrap;
     /* height: 280vh; */
-    margin-bottom: 75vh;
+   
 }
 h1.help{
-    font-size: 70px !important;
+    font-size: 5vw !important;
+    font-family: 'Nunito', sans-serif;
 }
 .help {
     font-family: 'Roboto';
 }
 #birdhelp {
     vertical-align: middle;
-    height: 30vw;
+    height: 46vw;
+}
+.helpPage {
+    height: fit-content;
+    font-size: 1.1vw !important;
+}
+.helpPage2 {
+    height: fit-content;
+    font-size: 1.1vw !important;
+}
+p.paragraph {
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
 }

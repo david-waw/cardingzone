@@ -179,12 +179,12 @@ export const About = [
     cName: 'dropdown-link'
   },
   {
-    title: 'Privacy Polocy',
+    title: 'Privacy Policy',
     path: '/privacypolicy',
     cName: 'dropdown-link'
   },
   {
-    title: 'Coockie Policy',
+    title: 'Cookie Policy',
     path: '/coockiepolicy',
     cName: 'dropdown-link'
   },

@@ -39,7 +39,7 @@ export default function Help() {
           
           </div>
       </div>
-      <div className='helpPage'>
+      <div className='helpPage1'>
    <img id="birdhelp" src={bird} alt="Logo" />;
       </div>
       <div className='helpPage2'>
