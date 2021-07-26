@@ -3,11 +3,11 @@ a.navbar-brand {
   width: fit-content;
 }
 img.logo {
-  width: 6vw;
+  width: 12vw;
 }
 div#logo {
   font-family: fantasy;
-  font-size: 2vw;
+  font-size: 4vw;
   width: fit-content;
   display:flex;
 }

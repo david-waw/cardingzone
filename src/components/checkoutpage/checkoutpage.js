@@ -55,8 +55,8 @@ const CheckoutPage = ({ cartItems, total}) => (
     <Button className="checkoutButtons"  href="./ShopPage"  variant="outline-secondary" size="lg">
   <i class="fa fa-shopping-basket" aria-hidden="true"></i>Continue Shopping
   </Button>
-  <Button className="checkoutButtons" id="oddBtn"  onClick={sayHello} variant="outline-primary" size="lg">
-   <i class="fa fa-btc" aria-hidden="true"></i>Proceed To Checkout
+  <Button className="checkoutButtons coinbit" id="oddBtn"  onClick={sayHello} variant="outline-primary" size="lg">
+   <i class="fa fa-btc" id="cinbtcc" aria-hidden="true"></i>Proceed To Checkout
   </Button>
   
 </div>
