@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Yatra+One&display=swap');
 a.navbar-brand {
   display: flex;
   width: fit-content;
@@ -7,7 +8,7 @@ img.logo {
   height: 5vw;
 }
 div#logo {
-  font-family: fantasy;
+  font-family: 'Yatra One', cursive;
   font-size: 1.6vw;
   width: -moz-fit-content;
   width: fit-content;
@@ -80,6 +81,7 @@ video {
   justify-content: center;
   margin-left: 2vw;
   opacity: 0.7;
+  background-color: blanchedalmond;
 }
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255,255,255,.55); */
