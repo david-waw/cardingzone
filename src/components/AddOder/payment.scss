@@ -1,3 +1,4 @@
+
 input.form-control.addinfo {
     height: 140px;
 }
@@ -6,11 +7,12 @@ form.form-group.oder {
 }
 .oderContainer {
     display: flex;
+    justify-content: center;
 }
 
 .oderDetails {
     border: 3px solid blue;
-    width: 94vw;
+    width: 623px;
     height: -moz-fit-content;
     height: fit-content;
     word-break: break-all;
@@ -27,12 +29,11 @@ div#oderSumary {
     display: flex;
     justify-content: space-between;
     margin-top: 56px;
-    font-size: 3vw;
+    font-size: 20px;
     font-family: 'Font Awesome 5 Brands';
     font-weight: 600;
     opacity: 0.6;
     border-bottom: 2.5px solid #aaa;
-  
 }
 p#payment {
     font-size: 17px;
@@ -63,7 +64,7 @@ button#bit\ button {
     margin-top: 20px;
     font-family: 'Roboto';
     /* margin-left: 32%; */
-    font-size: 4vw;
+    font-size: 17px;
 }
 p.copysucesss {
     text-align: center;
@@ -74,4 +75,87 @@ p.copysucesss {
 .containerer {
     background: aliceblue;
     padding-bottom: 34px;
+}
+.bitCopy {
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+    input.form-control.addinfo {
+        height: 140px;
+    }
+    form.form-group.oder {
+        width: 55%;
+    }
+    .oderContainer {
+        display: flex;
+    }
+    
+    .oderDetails {
+        border: 3px solid blue;
+        width: 94vw;
+        height: -moz-fit-content;
+        height: fit-content;
+        word-break: break-all;
+    }
+    div#oderTitle {
+        font-size: 20px;
+        font-family: emoji;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    div#oderSumary {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 56px;
+        font-size: 3vw;
+        font-family: 'Font Awesome 5 Brands';
+        font-weight: 600;
+        opacity: 0.6;
+        border-bottom: 2.5px solid #aaa;
+      
+    }
+    p#payment {
+        font-size: 8px;
+        margin-top: 32px;
+        font-weight: 800;
+        border-bottom: 2.5px solid #aaa;
+    }
+    i.fa.fa-btc.pnt {
+        color: black;
+        font-size: 11px;
+        margin-left: 8px;
+    }
+    p#payfooter {
+        font-size: 13px;
+        font-family: monospace;
+    }
+    .accoun{
+        margin: 3px !important;
+    }
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+        /* height: 600px; */
+        padding-bottom: 77px;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    button#bit\ button {
+        margin-top: 20px;
+        font-family: 'Roboto';
+        /* margin-left: 32%; */
+        font-size: 4vw;
+    }
+    p.copysucesss {
+        text-align: center;
+        font-family: cursive;
+        color: red;
+        font-size: 19px;
+    }
+    .containerer {
+        background: aliceblue;
+        padding-bottom: 34px;
+    }
 }

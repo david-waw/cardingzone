@@ -51,9 +51,7 @@ const Footer = () => {
                             <div className='footerContent'> VENDOR TERMS</div>
                         </a>
 
-                        <a href='/contactus'>
-                            <div className='footerContent'>  SUBMIT VENDOR APPLICATION </div>
-                        </a>
+                     
                     </div>
 
                     <div className='helpFooter'>

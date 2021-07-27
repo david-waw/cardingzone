@@ -35,10 +35,11 @@ p.contactSub {
     /* height: fit-content; */
     /* height: fit-content; */
     /* margin-bottom: auto; */
-    height: 214vh;
+    /* height: 214vh; */
     /* height: 100%; */
     max-height: -moz-max-content;
     /* white-space: nowrap; */
+    margin-bottom: 27px;
 }
 h2.kaheading {
     text-align: center;
@@ -52,7 +53,7 @@ h2.kasubheading {
 }
 .someContents {
     opacity: 0.8;
-    width: 70%;
+    width: 100%;
     /* justify-content: center; */
     text-align: center;
     margin-right: 0px;
@@ -65,4 +66,8 @@ h2.kasubheading {
 h2.compantTitle {
     text-decoration: underline;
     font-weight: 900;
+}
+div#maincontactcontainer {
+    margin-left: 24px;
+    margin-right: 20px;
 }

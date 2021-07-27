@@ -1,4 +1,90 @@
 .checkout-page {
+  width: 42%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto 0;
+
+  .checkout-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgrey;
+
+    .header-block {
+      text-transform: capitalize;
+      width: 23%;
+
+      &:last-child {
+        width: 8%;
+      }
+    }
+  }
+
+}
+a.checkoutButtons {
+  width: 38vw;
+  border-radius: 30vw;
+  margin-left: 20px;
+  font-size: 2vw;
+}
+.d-grid {
+/* display: grid!important; */
+display: flex !important;
+}
+
+.header-block {
+font-size: 1.3vw;
+}
+.checkout-item .image-container {
+width: 11vw;
+padding-right: 15px;
+}
+.checkout-item {
+width: 100%;
+display: flex;
+min-height: 100px;
+border-bottom: 1px solid darkgrey;
+padding: 15px 0;
+font-size: 1.5vw;
+align-items: center;
+}
+.checkout-page .total {
+margin-top: 30px;
+margin-left: auto;
+font-size: 3vw;
+font-family: monospace;
+}
+i#cinbtcc {
+font-size: 1.6vw;
+color: blue;
+}
+
+a#oddbtn2 {
+width: 27vw;
+font-size: 1.5vw;
+margin-bottom: 2vw;
+}
+#oddBtn {
+  margin-left: 5%;
+  /* justify-content: center; */
+  margin-left: 3%;
+  width: 27vw;
+  border-radius: 20vw;
+  font-size: 1.5vw;
+  /* margin-left: -3px; */
+  height: 42px;
+}
+.gape {
+display: flex;
+
+}
+
+@media all and (max-width: 500px) {
+  /* css */
+  .checkout-page {
     width: 55%;
     min-height: 90vh;
     display: flex;
@@ -34,9 +120,7 @@
   /* display: grid!important; */
   display: flex !important;
 }
-#oddBtn{
-  margin-left: 12%;
-}
+
 .header-block {
   font-size: 1.3vw;
 }
@@ -60,5 +144,28 @@
   font-family: monospace;
 }
 i#cinbtcc {
-  width: 3vw;
+  font-size: 1.6vw;
+  color: blue;
+}
+
+a#oddbtn2 {
+  width: 27vw;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  padding: 6px;
+}
+#oddBtn {
+  margin-left: 5%;
+  /* justify-content: center; */
+  margin-left: 3%;
+  width: 27vw;
+  border-radius: 20vw;
+  /* font-size: 1.5vw; */
+  /* margin-left: -3px; */
+  height: 29px;
+}
+.gape {
+  display: flex;
+
+}
 }

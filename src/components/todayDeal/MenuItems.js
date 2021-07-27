@@ -158,11 +158,7 @@ export const HelpItems = [
     path: '/help',
     cName: 'dropdown-link'
   },
-  {
-    title: 'Submit Vendor Aplication',
-    path: '/contactus',
-    cName: 'dropdown-link'
-  }
+ 
   
 ];
 

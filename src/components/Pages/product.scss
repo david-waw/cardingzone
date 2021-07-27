@@ -2,35 +2,34 @@
 
 .details{
     display: flex;
-    justify-content: space-around;
+  
     flex-wrap: wrap;
     padding: 30px 0;
   }
-  .details .big-img{
+  .details .big-img {
     max-width: 500px;
-    min-width: 290px;
     overflow: hidden;
-    margin: 25px;
-  }
-  .context{
-    max-width: 1200px;
-    width: 100%;
-    margin: 100px auto;
-    box-shadow: 0 0 5px #ccc;
-  }
+    width: 278px;
+    height: 352px;
+    margin-right: 4vw;
+}
+.context {
+  max-width: 1200px;
+  width: 56%;
+  margin: 100px auto;
+  box-shadow: 0 0 5px #ccc;
+ 
+}
   .big-img img {
-    width: 479px;
-    height: 100%;
-    max-height: 400px;
-    display: block;
+   
+    
     object-fit: cover;
 }
   
-  .details .box{
-    max-width: 500px;
-    min-width: 290px;
-    margin: 25px;
-  }
+.details .box {
+  max-width: 500px;
+  width: 30vw;
+}
   .box .row{
     display: flex;
     justify-content: space-between;
@@ -98,18 +97,18 @@
     font-weight: 800;
     opacity: 0.8;
     border-bottom: 2.5px solid #aaa;
-    font-size: 4vw;
+    font-size: 21px;
     font-family: 'Nunito', sans-serif;
 }
 span#predPrice {
-  font-size: 5vw;
+  font-size: 20px;
   float: right;
   color: black;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
 }
 p#tetms2 {
-  font-size: 3vw;
+  font-size: 16px;
   font-weight: 400;
   opacity: 0.6;
   font-family: 'Nunito', sans-serif;
@@ -119,14 +118,14 @@ p#terms1 {
   width: -moz-fit-content;
   width: fit-content;
   font-family: system-ui;
-  font-size: 3vw;
+  font-size: 16px;
   font-family: 'Nunito', sans-serif;
 }
 span#prodId {
   opacity: 0;
 }
 button#addbutton {
-  width: 5vw;
-  font-size: 2vw;
+  /* width: 5vw; */
+  font-size: 11px;
   font-family: 'Nunito', sans-serif;
 }

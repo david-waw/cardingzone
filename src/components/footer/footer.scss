@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 
-.footer{
+.footer {
     height: auto;
     margin-top: 150px;
-   
-    width:100%;
-   
+    width: 93%;
+    margin-left: 4vw;
 }
 .footerOne {
     height: 80%;
@@ -58,4 +57,7 @@ color: blue;
 }
 img#flower {
     height: 48px;
+}
+i.fa.fa-telegram.fafooter {
+    color: #009EE8;
 }

@@ -6,7 +6,7 @@ i.fa.fa-briefcase {
 }
 i.fa.fa-user-secret,i.fa.fa-codiepie,i.fa.fa-commenting-o{
     font-size: 100px;
-    color: blue;
+    color:#009EE8;
 }
 div#Code {
     display: flex;
@@ -15,13 +15,22 @@ div#Code {
     height: auto;
     flex-wrap: wrap;
     margin-bottom: 44px;
-    flex-flow: column;
+    flex-flow: row;
 }
+
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    div#Code {
+        display: flex;
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 44px;
+        flex-flow: column;
+    }
+  }
 .description {
     font-size: 20px;
     font-weight: 700;
-}
-.code {
-    height: fit-content;
-    
 }

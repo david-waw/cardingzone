@@ -30,12 +30,14 @@
     text-transform: lowercase;
 }
 .reviewCard {
-    border-style: outset;
+    /* border-style: outset; */
     width: 322px;
     height: 500px;
     margin: 10px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     text-align: center;
+    background-color: white;
+    box-shadow: -5px 1px 49px 1px;
 }
 .reviewCard img {
   
@@ -63,5 +65,6 @@
     margin-top: 19px;
 }
 button.rev111.btn.btn-outline-primary {
-    font-size: 2.5vw;
+    font-size: 2vw;
+    color: #009EE8;
 }

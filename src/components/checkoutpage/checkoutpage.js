@@ -51,9 +51,9 @@ const CheckoutPage = ({ cartItems, total}) => (
     ))}
     <div className='total'>TOTAL: ${total}</div>
    
-    <div className="d-grid gap-2">
-    <Button className="checkoutButtons"  href="./ShopPage"  variant="outline-secondary" size="lg">
-  <i class="fa fa-shopping-basket" aria-hidden="true"></i>Continue Shopping
+    <div className=" gape">
+    <Button className="checkoutButtons" id="oddbtn2" href="./ShopPage"  variant="outline-secondary" size="lg">
+  <i class="fa fa-shopping-basket" id="cinbtcc2" aria-hidden="true"></i>Continue Shopping
   </Button>
   <Button className="checkoutButtons coinbit" id="oddBtn"  onClick={sayHello} variant="outline-primary" size="lg">
    <i class="fa fa-btc" id="cinbtcc" aria-hidden="true"></i>Proceed To Checkout

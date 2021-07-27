@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import CustomButton from '../custombutton/custombutton';
 import { addItem } from "../../redux/cart/cart.actions";
 import { v4 as uuidv4 } from 'uuid';
+import Swal from 'sweetalert2'
+
 
 export  class Products extends Component {
 
@@ -13,6 +15,17 @@ constructor() {
        
         product:[ JSON.parse(localStorage.getItem('notifiedRoom'))],
     }
+  }
+
+  opensweetalert()
+  {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'ADDED TO CART',
+      showConfirmButton: false,
+      timer: 1000
+    })
   }
  
     render() {
@@ -44,7 +57,7 @@ constructor() {
              </h3>
                      
                        
-                       <CustomButton id="addbutton" onClick={() => this.props.addItem(({image, name, price,id}))} inverted>Add to cart </CustomButton>
+             <CustomButton id="addbutton" onClick={() => { this.props.addItem(({ image, name, price, id }));this.opensweetalert()}} inverted>Add to cart </CustomButton>
                            </div>
                        </div>
               
