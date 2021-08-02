@@ -75,7 +75,7 @@ function Navbare({currentUser, hidden, signOutStart }) {
     return (
         <>
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Container>
+ 
   <Navbar.Brand href="#home"> <Link to='/' className='navbar-logo' >
                     <img className='logo' src={logo} alt="Logo" />
                     <div id='logo'>
@@ -175,7 +175,7 @@ function Navbare({currentUser, hidden, signOutStart }) {
    
     </Nav>
   </Navbar.Collapse>
-  </Container>
+  
 </Navbar>
         </>
     );

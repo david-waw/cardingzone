@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import Button from 'react-bootstrap/Button'
+import Swal from 'sweetalert2'
 
 
 import {
@@ -20,7 +21,15 @@ export const AddOder = ({ total }) => {
       setCopySuccess('Failed to copy!');
     }
   };
-
+ const opensweetalert=() => {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'COPIED',
+      showConfirmButton: false,
+      timer: 1000
+    })
+  } 
 
 
   return (
@@ -42,8 +51,8 @@ export const AddOder = ({ total }) => {
 
           </div>
           <div className="bitCopy">
-          <Button id="bit button" onClick={() => copyToClipBoard('bc1qpwjgcgstf98vysz3va0yvc50u4x8pujr2ltmdm')}>
-
+          <Button id="bit button" onClick={() =>{ copyToClipBoard('bc1qpwjgcgstf98vysz3va0yvc50u4x8pujr2ltmdm');opensweetalert()}}>
+        
 Click here to copy wallet
 </Button>
           </div>
