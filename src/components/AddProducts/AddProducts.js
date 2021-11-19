@@ -5,7 +5,7 @@ import "./AddProducts.scss"
 export const AddProducts = () => {
 
     const [productName, setProductName] = useState('');
-    const [ createdAt, setCreatedAt] = useState('');
+    const [createdAt, setCreatedAt] = useState('');
     const [description, setDescription] = useState('');
     const [terms, setTerms] = useState('');
     const [category, setCategory] = useState('');
@@ -34,14 +34,14 @@ export const AddProducts = () => {
         const uploadTask = storage.ref(`product-images/${productImg.name}`).put(productImg);
         uploadTask.on('state_changed', snapshot => {
             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log(progress);
+            (progress);
         }, err => setError(err.message)
             , () => {
                 storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
                     db.collection('Products').add({
                         ProductName: productName,
-                        category:category,
-                        country:country,
+                        category: category,
+                        country: country,
                         ProductPrice: Number(productPrice),
                         ProductImg: url,
                         description: description,
@@ -68,33 +68,33 @@ export const AddProducts = () => {
             <h2>ADD PRODUCTS</h2>
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
-               
+
                 <input type="text" className='form-control' required placeholder="Product Name"
                     onChange={(e) => setProductName(e.target.value)} value={productName} />
                 <br />
-                
-               
+
+
                 <input type="text" className='form-control' required placeholder="Category"
                     onChange={(e) => setCategory(e.target.value)} value={category} />
                 <br />
-              
+
                 <input type="text" className='form-control' required placeholder="Country"
                     onChange={(e) => setCountry(e.target.value)} value={country} />
                 <br />
-              
+
                 <input type="number" className='form-control' required placeholder="Product Price"
                     onChange={(e) => setProductPrice(e.target.value)} value={productPrice} />
                 <br />
-              
+
                 <input type="file" className='form-control' id="file" required placeholder="Product Image"
                     onChange={productImgHandler} />
                 <br />
-              
-             
+
+
                 <input type="text" className='form-control bg' required placeholder="Description"
                     onChange={(e) => setDescription(e.target.value)} value={description} />
                 <br />
-              
+
                 <button type="submit" className='btn btn-success btn-md mybtn'>ADD</button>
             </form>
             {error && <span className='error-msg'>{error}</span>}

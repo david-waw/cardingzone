@@ -11,7 +11,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const Deal = () => {
     const { product } = useContext(ProductContext)
-    console.log(product)
+        (product)
 
     const click = (...props) => {
         let notifiedRoom = {
@@ -20,9 +20,9 @@ const Deal = () => {
             price: props.[0],
             description: props.[1]
         };
-        console.log(props)
+        (props)
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        console.log(data)
+        (data)
         handleClick()
     }
 

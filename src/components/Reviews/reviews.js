@@ -8,7 +8,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const Review = () => {
     const { product } = useContext(ReviewContext)
-    console.log(product)
+        (product)
 
 
     return (

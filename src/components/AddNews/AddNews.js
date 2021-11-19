@@ -28,21 +28,21 @@ export const AddNews = () => {
         const uploadTask = storage.ref(`product-images/${productImg.name}`).put(productImg);
         uploadTask.on('state_changed', snapshot => {
             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log(progress);
+            (progress);
         }, err => setError(err.message)
             , () => {
                 storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
                     db.collection('News').add({
                         ProductName: productName,
-                        category:category,
-                       
-                       
+                        category: category,
+
+
                         ProductImg: url
                     }).then(() => {
                         setProductName('');
                         setCategory('');
-                     
-                        
+
+
                         setProductImg('');
                         setError('');
                         document.getElementById('file').value = '';
@@ -65,7 +65,7 @@ export const AddNews = () => {
                 <input type="text" className='form-control' required
                     onChange={(e) => setCategory(e.target.value)} value={category} />
                 <br />
-                
+
                 <label htmlFor="product-img"> Image</label>
                 <input type="file" className='form-control' id="file" required
                     onChange={productImgHandler} />

@@ -9,7 +9,7 @@ import CustomButton from '../custombutton/custombutton'
 import Spinner from 'react-bootstrap/Spinner'
 const CDAustraliaVisa = () => {
     const { product } = useContext(ProductContext)
-    console.log(product)
+        (product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -27,7 +27,7 @@ const CDAustraliaVisa = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        console.log(data)
+        (data)
         handleClick()
     }
 

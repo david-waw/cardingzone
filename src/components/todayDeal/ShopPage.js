@@ -11,7 +11,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const ShopPage = () => {
     const { product } = useContext(ProductContext)
-    console.log(product)
+        (product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -29,7 +29,7 @@ const ShopPage = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        console.log(data)
+        (data)
         handleClick()
     }
 

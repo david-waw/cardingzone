@@ -3,9 +3,9 @@ import { storage, db } from '../Config/config'
 
 export const AddCategory = () => {
 
-   
+
     const [category, setCategory] = useState('');
-   const [productImg, setProductImg] = useState(null);
+    const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
 
     const types = ['image/png', 'image/jpeg']; // image types
@@ -28,16 +28,16 @@ export const AddCategory = () => {
         const uploadTask = storage.ref(`product-images/${productImg.name}`).put(productImg);
         uploadTask.on('state_changed', snapshot => {
             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log(progress);
+            (progress);
         }, err => setError(err.message)
             , () => {
                 storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
                     db.collection('Category').add({
-                      
-                        category:category,
+
+                        category: category,
                         ProductImg: url
                     }).then(() => {
-                      
+
                         setCategory('');
                         setProductImg('');
                         setError('');
@@ -53,12 +53,12 @@ export const AddCategory = () => {
             <h2>ADD PRODUCTS</h2>
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
-              
-               
+
+
                 <input type="text" className='form-control' required placeholder="category"
                     onChange={(e) => setCategory(e.target.value)} value={category} />
                 <br />
-               
+
                 <input type="file" className='form-control' id="file" required placeholder="Product Images"
                     onChange={productImgHandler} />
                 <br />

@@ -37,7 +37,7 @@ export const Authentic = () => {
     const uploadTask = storage.ref(`product-images/${productImg.name}`).put(productImg);
     uploadTask.on('state_changed', snapshot => {
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      console.log(progress);
+      (progress);
     }, err => setError(err.message)
       , () => {
         storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
@@ -51,12 +51,12 @@ export const Authentic = () => {
 
             ProductImg: url
           }).then(() => {
-           
 
-   setUsername('');
-   setEmail('');
-   setOder('');
-   setPurchase('');
+
+            setUsername('');
+            setEmail('');
+            setOder('');
+            setPurchase('');
             setRating('');
             setFeed('')
             setProductImg('');
@@ -69,41 +69,41 @@ export const Authentic = () => {
 
   return (
     <div className='container'  >
-     
+
       <br />
-  
+
       <div className="RevHead">
-      <h2>VOUCH FOR US AND GET $$$</h2>
-      <p >When you vouch for us by giving us feedback with either a Photo or a Video you will get 10% crypto back, it’s another way to say thank you for believing in us.</p>
-      </div>      
+        <h2>VOUCH FOR US AND GET $$$</h2>
+        <p >When you vouch for us by giving us feedback with either a Photo or a Video you will get 10% crypto back, it’s another way to say thank you for believing in us.</p>
+      </div>
       <hr />
       <form autoComplete="off" className='form-group' onSubmit={addProduct}>
 
-        
+
         <input type="text" className='form-control' required placeholder="Username"
           onChange={(e) => setUsername(e.target.value)} value={username} />
         <br />
-       
+
         <input type="email" className='form-control' required placeholder="Email"
           onChange={(e) => setEmail(e.target.value)} value={email} />
         <br />
-       
-        <input type="text" className='form-control' required   placeholder="Oder Number"
+
+        <input type="text" className='form-control' required placeholder="Oder Number"
           onChange={(e) => setOder(e.target.value)} value={oder} />
         <br />
-        
-        <input type="text" className='form-control' required  placeholder="Star Rating"
+
+        <input type="text" className='form-control' required placeholder="Star Rating"
           onChange={(e) => setRating(e.target.value)} value={rating} />
         <br />
-      
-        <input type="text" className='form-control' required  placeholder="Type Feedback Here"
+
+        <input type="text" className='form-control' required placeholder="Type Feedback Here"
           onChange={(e) => setFeed(e.target.value)} value={feed} />
         <br />
-        
-        <input type="text" className='form-control' required  placeholder="Purchasd Item"
+
+        <input type="text" className='form-control' required placeholder="Purchasd Item"
           onChange={(e) => setPurchase(e.target.value)} value={purchase} />
         <br />
-       
+
         <input type="file" className='form-control' id="file" required placeholder="Product Images"
           onChange={productImgHandler} />
         <br />
@@ -111,11 +111,11 @@ export const Authentic = () => {
       </form>
       {error && <span className='error-msg'>{error}</span>}
 
-    
+
     </div>
-   
-   
+
+
   )
- 
+
 }
 export default Authentic
