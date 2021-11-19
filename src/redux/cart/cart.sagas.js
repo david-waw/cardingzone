@@ -19,7 +19,7 @@ export function* updateCartInFirebase() {
       const cartItems = yield select(selectCartItems);
       yield cartRef.update({ cartItems });
     } catch (error) {
-      (error);
+    
     }
   }
 }

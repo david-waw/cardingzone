@@ -20,7 +20,7 @@ const Deal = () => {
             price: props.[0],
             description: props.[1]
         };
-        (props)
+      
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
 
         handleClick()
