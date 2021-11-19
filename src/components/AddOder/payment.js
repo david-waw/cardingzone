@@ -42,7 +42,7 @@ export const AddOder = ({ total }) => {
           <div id="oderTitle">YOUR ODER</div>
           <div id="oderSumary">
             <p>Total</p>
-            <p>{total}</p>
+            <p>${total}</p>
           </div>
           <div id="oderSumary" className="accoun">
             <p>Bitcoin Adress</p>
@@ -60,6 +60,7 @@ export const AddOder = ({ total }) => {
           <p id="payment">WE ACCEPT BITCOIN CRYPTO<i class="fa fa-btc pnt" aria-hidden="true"></i></p>
 
           <p id="payfooter">Send Bitcoin  To The Above Bitcoin Adress</p>
+          <p id="payfooters">your oder will be sent to your email after payment is recieved </p>
 
         </div>
 
