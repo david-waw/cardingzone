@@ -21,7 +21,7 @@ export const AddOder = ({ total }) => {
       setCopySuccess('Failed to copy!');
     }
   };
- const opensweetalert=() => {
+  const opensweetalert = () => {
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -29,7 +29,7 @@ export const AddOder = ({ total }) => {
       showConfirmButton: false,
       timer: 1000
     })
-  } 
+  }
 
 
   return (
@@ -46,17 +46,17 @@ export const AddOder = ({ total }) => {
           </div>
           <div id="oderSumary" className="accoun">
             <p>Bitcoin Adress</p>
-            <p>bc1qpwjgcgstf98vysz3va0yvc50u4x8pujr2ltmdm</p>
+            <p>3Nj6PsiyjaWyZQRmnn1rrxyT8zNSWDeTVq</p>
 
 
           </div>
           <div className="bitCopy">
-          <Button id="bit button" onClick={() =>{ copyToClipBoard('bc1qpwjgcgstf98vysz3va0yvc50u4x8pujr2ltmdm');opensweetalert()}}>
-        
-Click here to copy wallet
-</Button>
+            <Button id="bit button" onClick={() => { copyToClipBoard('3Nj6PsiyjaWyZQRmnn1rrxyT8zNSWDeTVq'); opensweetalert() }}>
+
+              Click here to copy wallet
+            </Button>
           </div>
-         
+
           <p id="payment">WE ACCEPT BITCOIN CRYPTO<i class="fa fa-btc pnt" aria-hidden="true"></i></p>
 
           <p id="payfooter">Send Bitcoin  To The Above Bitcoin Adress</p>
