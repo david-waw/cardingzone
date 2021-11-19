@@ -28,7 +28,7 @@ const Western = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        (data)
+
         handleClick()
     }
 

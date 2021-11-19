@@ -27,7 +27,7 @@ const CDFranceVisa = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        (data)
+
         handleClick()
     }
 

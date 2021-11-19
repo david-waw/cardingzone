@@ -27,7 +27,7 @@ const Dark = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        (data)
+
         handleClick()
     }
 

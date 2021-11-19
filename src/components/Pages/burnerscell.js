@@ -27,7 +27,7 @@ const BurnersCell = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-        (data)
+
         handleClick()
     }
 
