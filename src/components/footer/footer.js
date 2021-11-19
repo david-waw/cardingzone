@@ -14,7 +14,7 @@ const Footer = () => {
                             ABOUT US
                         </div>
                         <a href="/aboutus">
-                            <div className='footerContentab'> We are at cardingdrill vendors from Hansa Market Place</div>
+                            <div className='footerContentab'> We are at cardingzone vendors from Hansa Market Place</div>
                         </a>
                         <a href="/aboutus">
                             <div className='footerContentab'> We sucesfully deliver over 1700+ oders with 98% positive review </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                             <div className='footerContent'> VENDOR TERMS</div>
                         </a>
 
-                     
+
                     </div>
 
                     <div className='helpFooter'>
@@ -78,15 +78,15 @@ const Footer = () => {
                         <div className='titleone'>
                             OFFICIAL ICQ TELEGRAM
                         </div>
-                        <div className='footerContent'> <img id="flower" alt="Qries" src="https://cardingbird.com/wp-content/uploads/2020/10/ICQ-CashoutEmpire-1-100x100.png" />@log_master</div>
-                        <div className='footerContent'><i className="fa fa-telegram fafooter" aria-hidden="true"></i>@log_master</div>
+                        <div className='footerContent'> <img id="flower" alt="Qries" src="https://cardingbird.com/wp-content/uploads/2020/10/ICQ-CashoutEmpire-1-100x100.png" />@cardingzone</div>
+                        <div className='footerContent'><i className="fa fa-telegram fafooter" aria-hidden="true"></i>@cardingzone</div>
                         <div className='footerContent'>NOTE:we also have an invite only<br /> telegram group chat reserved for<br /> our "paid customers"</div>
 
                     </div>
                 </div>
                 <div className='Footertwo'>
                     <div className='Footertime'>
-                        2021 cardingdrill.com
+                        2021 cardingzone.com
                     </div>
                     <div className='Footertlogo'>
                         <i class="fa fa-btc" aria-hidden="true"></i>

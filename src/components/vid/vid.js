@@ -19,7 +19,7 @@ function VideoArea() {
                 </video>
                 <div className='vidContent'>
                     <p id="hansa" className='sameColor'>We Are Hansa Vendor</p>
-                    <p id='carding' className='sameColor'>@cardingdrill</p>
+                    <p id='carding' className='sameColor'>@cardingzone</p>
                     <p id='over' className='sameColor'>Over 1600+ Sales On Hansa Market</p>
                     <button className='sameColor browseButton' onClick={handleClick}><i className="fa fa-shopping-bag" aria-hidden="true"></i>BROWSE NOW</button>
                 </div>

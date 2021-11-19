@@ -19,7 +19,7 @@ const Code = () => (
                         YOUR PRIVACY IS GUARANTEED
                     </div>
                     <div>
-                        At "cardingdrill.com" we have built secure data collection,processing and service delivery system to keep your private information private
+                        At "cardingzone.com" we have built secure data collection,processing and service delivery system to keep your private information private
                     </div>
                 </div>
                 <div className='code'>

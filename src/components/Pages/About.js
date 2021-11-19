@@ -6,7 +6,7 @@ export default function About() {
     <>
       <div className="aboutCont">
         <h2><span ><strong><span >#. WHO ARE WE?</span></strong></span></h2>
-        <p><span>We are<strong> cardingdrill Vendor</strong>&nbsp;based somewhere in Utah <strong>from Hansa Marketplace</strong>, we successfully delivered over <strong>1,500+ orders with 97% Positive Reviews</strong> from our customers.</span></p>
+        <p><span>We are<strong> cardingzone Vendor</strong>&nbsp;based somewhere in Utah <strong>from Hansa Marketplace</strong>, we successfully delivered over <strong>1,500+ orders with 97% Positive Reviews</strong> from our customers.</span></p>
         <p><span>We have <strong>extensive knowledge &amp; experience</strong> in dealing with and delivering a <strong>wide range of services</strong> to our clients.</span></p>
         <p><span ><span >Since the <strong>Hansa Market went down </strong>we decided to work independently so we created this site </span><span >to serve our<strong> existing client base and to acquire clients</strong> for our services in the process.</span></span></p>
         <p><span >We take a <strong>great deal of care</strong> in <strong>serving our existing clients</strong> and provide basic &amp; limited support to our potentially new clients.</span></p>
@@ -17,7 +17,7 @@ export default function About() {
         <h2><span><strong><span >#. </span></strong><span><strong><span >ARE YOU A VENDOR AND WANNA WORK TOGETHER?</span></strong></span></span></h2>
         <p><span >We also <strong>welcome our fellow Hansa Market as well as other vendors</strong> to partner up with us in serving our existing clients, so if you were or are a vendor on any Market who would like to sell your services to our client base you must first read <strong>“<span ><a href="/help/">Third Party Vendors</a></span>“</strong> section in the Terms of our Services and if you are still interested you can get in touch with a complete list of your services and pricing.</span></p>
         <p><span><strong>Happy Carding!</strong></span></p>
-        <p>cardingdrill Team</p>
+        <p>cardingzone Team</p>
         <div className="buttonsgroup">
           <Button className="buttonsgroups" href="./cardedproducts/apple iphones"><i class="fa fa-shopping-cart" aria-hidden="true"></i>View all Iphones</Button>
           <Button className="buttonsgroups" href="./authenticreviews"><i class="fa fa-star" aria-hidden="true"></i>Read Our Reviews</Button>

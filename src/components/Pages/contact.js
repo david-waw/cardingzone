@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="contactHead" style={{ backgroundImage: `url(${background})` }}>
             <h2 className="contactTitle" >CONTACT US!</h2>
             <p className="contactSub" ><span >You must use PGP when contacting us, any messages that are send in plain text will be deleted and ignored.</span></p>
-            <p className="contactSub" ><span >Contact us by contacting @log_master on Telegram or writing us an email at logmaster5@protonmail.com</span></p>
+            <p className="contactSub" ><span >Contact us by contacting @cardingzone on Telegram or writing us an email at logmaster5@protonmail.com</span></p>
           </div>
 
 
