@@ -9,7 +9,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const CDUsExpress = () => {
     const { product } = useContext(ProductContext)
-        (product)
+    console.log(product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 8
     const pagesVisited = pageNumber * itemsPerPage
@@ -27,7 +27,7 @@ const CDUsExpress = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-
+        console.log(data)
         handleClick()
     }
 

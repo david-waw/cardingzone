@@ -10,7 +10,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const CardProductsairpods = () => {
     const { product } = useContext(ProductContext)
-        (product)
+    console.log(product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -28,7 +28,7 @@ const CardProductsairpods = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-
+        console.log(data)
         handleClick()
     }
 

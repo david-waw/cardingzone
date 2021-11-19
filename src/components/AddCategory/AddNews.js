@@ -3,13 +3,13 @@ import { storage, db } from '../Config/config'
 
 export const AddReviews = () => {
 
-
-
+   
+    
     const [heading, setHeading] = useState('');
     const [body, setBody] = useState('');
     const [name, setName] = useState('');
     const [country, setCountry] = useState('');
-    const [productImg, setProductImg] = useState(null);
+   const [productImg, setProductImg] = useState(null);
     const [error, setError] = useState('');
 
     const types = ['image/png', 'image/jpeg']; // image types
@@ -32,13 +32,13 @@ export const AddReviews = () => {
         const uploadTask = storage.ref(`product-images/${productImg.name}`).put(productImg);
         uploadTask.on('state_changed', snapshot => {
             const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            
+            console.log(progress);
         }, err => setError(err.message)
             , () => {
                 storage.ref('product-images').child(productImg.name).getDownloadURL().then(url => {
                     db.collection('Reviews').add({
                         name: name,
-                        contry: country,
+                        contry:country,
                         heading: heading,
                         body: body,
                         ProductImg: url
@@ -61,24 +61,24 @@ export const AddReviews = () => {
             <h2>ADD REVIEW</h2>
             <hr />
             <form autoComplete="off" className='form-group' onSubmit={addProduct}>
-
-
+              
+                
                 <input type="text" className='form-control' required placeholder="Heading"
                     onChange={(e) => setHeading(e.target.value)} value={heading} />
                 <br />
-
+              
                 <input type="text" className='form-control' required placeholder="Body"
                     onChange={(e) => setBody(e.target.value)} value={body} />
                 <br />
-
+               
                 <input type="text" className='form-control' required placeholder="Name"
                     onChange={(e) => setName(e.target.value)} value={name} />
                 <br />
-
+              
                 <input type="text" className='form-control' required placeholder="Country"
                     onChange={(e) => setCountry(e.target.value)} value={country} />
                 <br />
-
+               
                 <input type="file" className='form-control' id="file" required placeholder="Product Image"
                     onChange={productImgHandler} />
                 <br />

@@ -19,166 +19,166 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
 import { About } from './MenuItems.js';
 
 
-function Navbare({ currentUser, hidden, signOutStart }) {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click)
-  const closeMobileMenu = () => setClick(false);
-
-  const [dropdown, setDropdown] = useState(false);
-  const [help, setHelp] = useState(false);
-  const [about, setAboutData] = useState(false);
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
-  const onMouseArrive = () => {
-    if (window.innerWidth < 960) {
-      setHelp(false);
-    } else {
-      setHelp(true);
-    }
-  };
-
-  const onMouseExit = () => {
-    if (window.innerWidth < 960) {
-      setHelp(false);
-    } else {
-      setHelp(false);
-    }
-  };
-  const onMouseIn = () => {
-    if (window.innerWidth < 960) {
-      setAboutData(false);
-    } else {
-      setAboutData(true);
-    }
-  };
-
-  const onMouseOut = () => {
-    if (window.innerWidth < 960) {
-      setAboutData(false);
-    } else {
-      setAboutData(false);
-    }
-  };
-  return (
-    <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-
-        <Navbar.Brand href="#home"> <Link to='/' className='navbar-logo' >
-          <img className='logo' src={logo} alt="Logo" />
-          <div id='logo'>
-            CARDING<br />
-            ZONE
-          </div>
-
-
-        </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link > <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-
-              HOME
-            </Link></Nav.Link>
-
-            <NavDropdown title="SHOP AND CATEGORIES" id="collasible-nav-dropdown">
-              {MenuItems.map((item, index) => {
-                return (
-                  <NavDropdown.Item  >
-
-                    <li key={index}>
-                      <Link
-                        className={item.cName}
-                        to={item.path}
-                        onClick={() => setClick(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-
-                  </NavDropdown.Item>
-                );
-              })}
-
-              <NavDropdown.Divider />
-
-            </NavDropdown>
-            <NavDropdown title="HELP AND SUPPORT" id="collasible-nav-dropdown">
-              {HelpItems.map((item, index) => {
-                return (
-                  <NavDropdown.Item >  <li key={index}>
-                    <Link
-                      className={item.cName}
-                      to={item.path}
-                      onClick={() => setClick(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  </li></NavDropdown.Item>
-
-                );
-              })}
-
-
-            </NavDropdown>
-            <NavDropdown title="About" id="collasible-nav-dropdown">
-              {About.map((item, index) => {
-                return (
-                  <NavDropdown.Item > <li key={index}>
-                    <Link
-                      className={item.cName}
-                      to={item.path}
-                      onClick={() => setClick(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  </li></NavDropdown.Item>
-                );
-              })}
-
-
-            </NavDropdown>
-            <Nav.Link >   {currentUser ? (
-              <div className='nav-links' id="signinout" onClick={signOutStart}>
-                SIGN OUT
-              </div>
-            ) : (
-              <Link className='nav-links' to='/signin'>
-                SIGN IN
+function Navbare({currentUser, hidden, signOutStart }) {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false);
+    
+    const [dropdown, setDropdown] = useState(false);
+    const [help, setHelp] = useState(false);
+    const [about, setAboutData] = useState(false);
+    const onMouseEnter = () => {
+        if (window.innerWidth < 960) {
+          setDropdown(false);
+        } else {
+          setDropdown(true);
+        }
+      };
+    
+      const onMouseLeave = () => {
+        if (window.innerWidth < 960) {
+          setDropdown(false);
+        } else {
+          setDropdown(false);
+        }
+    };
+    const onMouseArrive = () => {
+        if (window.innerWidth < 960) {
+          setHelp(false);
+        } else {
+          setHelp(true);
+        }
+      };
+    
+      const onMouseExit = () => {
+        if (window.innerWidth < 960) {
+          setHelp(false);
+        } else {
+          setHelp(false);
+        }
+    };
+    const onMouseIn = () => {
+        if (window.innerWidth < 960) {
+          setAboutData(false);
+        } else {
+          setAboutData(true);
+        }
+      };
+    
+      const onMouseOut = () => {
+        if (window.innerWidth < 960) {
+          setAboutData(false);
+        } else {
+          setAboutData(false);
+        }
+      };
+    return (
+        <>
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+ 
+  <Navbar.Brand href="#home"> <Link to='/' className='navbar-logo' >
+                    <img className='logo' src={logo} alt="Logo" />
+                    <div id='logo'>
+                        CARDING<br />
+                       DRILL
+                    </div>
+                    
+              
+                </Link>
+            </Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link > <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                       
+                       HOME
+                   </Link></Nav.Link>
+   
+                <NavDropdown title="SHOP AND CATEGORIES" id="collasible-nav-dropdown">
+                  {MenuItems.map((item, index) => {
+                    return (
+        <NavDropdown.Item  >
+        
+            <li key={index}>
+              <Link
+                className={item.cName}
+                to={item.path}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
               </Link>
-            )}</Nav.Link>
-          </Nav>
-          <li className='nav-itemw'>
-            <Cost className='carticon' />
-            <CartIcon className='carticon' />
-            {
-              hidden ? null :
-                <CartDropdown />
-            }
-
-          </li>
-          <Nav>
-
-
-          </Nav>
-        </Navbar.Collapse>
-
-      </Navbar>
-    </>
-  );
+            </li>
+          
+                      </NavDropdown.Item>
+                      );
+      })}
+      
+        <NavDropdown.Divider />
+     
+                </NavDropdown>
+                <NavDropdown title="HELP AND SUPPORT" id="collasible-nav-dropdown">
+                {HelpItems.map((item, index) => {
+                  return (
+                    <NavDropdown.Item >  <li key={index}>
+              <Link
+                className={item.cName}
+                to={item.path}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
+              </Link>
+            </li></NavDropdown.Item>
+                  
+                          );
+      })}
+      
+        
+                </NavDropdown>
+                <NavDropdown title="About" id="collasible-nav-dropdown">
+                {About.map((item, index) => {
+                  return (
+                    <NavDropdown.Item > <li key={index}>
+              <Link
+                className={item.cName}
+                to={item.path}
+                onClick={() => setClick(false)}
+              >
+                {item.title}
+              </Link>
+            </li></NavDropdown.Item>
+           );
+        })}
+      
+        
+                </NavDropdown>
+                <Nav.Link >   {currentUser ? (
+                            <div className='nav-links' id="signinout"  onClick={signOutStart}>
+                                SIGN OUT
+                            </div>
+                        ) : (
+                            <Link className='nav-links' to='/signin'>
+                                SIGN IN
+                            </Link>
+                        )}</Nav.Link>
+              </Nav>
+              <li className='nav-itemw'>
+            <Cost className='carticon'/>
+              <CartIcon className='carticon' />
+              {
+                hidden ? null :
+                <CartDropdown/>
+              }
+              
+            </li>
+    <Nav>
+    
+   
+    </Nav>
+  </Navbar.Collapse>
+  
+</Navbar>
+        </>
+    );
 
 }
 

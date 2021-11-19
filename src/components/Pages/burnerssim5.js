@@ -9,7 +9,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const BurnersSimMoroko = () => {
     const { product } = useContext(ProductContext)
-        (product)
+    console.log(product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -27,7 +27,7 @@ const BurnersSimMoroko = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-
+        console.log(data)
         handleClick()
     }
 

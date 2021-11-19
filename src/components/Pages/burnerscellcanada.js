@@ -9,7 +9,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const BurnersCellCanada = () => {
     const { product } = useContext(ProductContext)
-        (product)
+    console.log(product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -27,7 +27,7 @@ const BurnersCellCanada = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-
+        console.log(data)
         handleClick()
     }
 

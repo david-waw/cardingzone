@@ -37,7 +37,7 @@ width:100%
 `
 const SideNav = () => {
     const [sidebar, setSidebar] = useState(true)
-    const showSidebar=()=>setSidebar(!sidebar)
+    const showSidebar=()=>setSidebar(! sidebar)
     return (
         <>
           

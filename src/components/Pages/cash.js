@@ -9,7 +9,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
 const CashApp = () => {
     const { product } = useContext(ProductContext)
-        (product)
+    console.log(product)
     const [pageNumber, setPageNumber] = useState(0)
     const itemsPerPage = 6
     const pagesVisited = pageNumber * itemsPerPage
@@ -27,7 +27,7 @@ const CashApp = () => {
         };
 
         var data = localStorage.setItem('notifiedRoom', JSON.stringify(notifiedRoom));
-
+        console.log(data)
         handleClick()
     }
 
@@ -46,8 +46,7 @@ const CashApp = () => {
                         {product.length === 0 && <div><Spinner animation="border" role="status">
                             <span className="visually-hidden">Loading...</span>
                         </Spinner></div>}
-                        {product.filter(name => name.category.includes('CashApp'))
-                            .slice(pagesVisited, pagesVisited + itemsPerPage).map(category => (
+                        {product.filter(name => name.category.includes('CashApp')).slice(pagesVisited, pagesVisited + itemsPerPage).map(category => (
 
 
                             <div className='productCard' key={category.ProductsID}>
