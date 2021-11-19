@@ -59,18 +59,12 @@ export const MenuItems = [
       path: '/dumps',
       cName: 'dropdown-link'
     },
-    {
-      title: 'Emv Chip Software',
-      path: '/software',
-      cName: 'dropdown-link'
-    },
+  
   {
     title: 'Fake Id',
     path: '/fakeid',
     cName: 'dropdown-link',
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-   
+  
   },
   {
     title: 'Credit/Debit Cards',

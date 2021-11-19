@@ -78,7 +78,7 @@ const Footer = () => {
                         <div className='titleone'>
                             OFFICIAL ICQ TELEGRAM
                         </div>
-                        <div className='footerContent'> <img id="flower" alt="Qries" src="https://cardingbird.com/wp-content/uploads/2020/10/ICQ-CashoutEmpire-1-100x100.png" />@cardingzone</div>
+                       
                         <div className='footerContent'><i className="fa fa-telegram fafooter" aria-hidden="true"></i>@cardingzone</div>
                         <div className='footerContent'>NOTE:we also have an invite only<br /> telegram group chat reserved for<br /> our "paid customers"</div>
 

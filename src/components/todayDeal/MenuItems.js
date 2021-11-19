@@ -110,11 +110,6 @@ export const MenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: 'Emv Chip Software',
-    path: '/softwares',
-    cName: 'dropdown-link'
-  },
-  {
     title: 'FakeId',
     path: '/fakeId',
     cName: 'dropdown-link'
